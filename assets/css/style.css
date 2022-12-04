@@ -17,7 +17,7 @@ html{
 }
 body{
     background-color: #fff;
-    color: #191f21;
+    color: var(--color-default);
     font-family: 'Montserrat', 'Spartan', 'Spartan MB' , 'Goldman', 'Cairo' ,Arial,sans-serif;
     position: relative;
     width: 100%;
@@ -285,7 +285,7 @@ header.mega-services > img{
     display: block;
 }
 .navbar{
-    background: transparent;
+    background: linear-gradient(#fff 0%, rgba(255, 255, 255, 0) 100%);
     border: none;
     width: 100%;
     padding: 50px 0 26px;
@@ -293,17 +293,11 @@ header.mega-services > img{
     z-index: 9999;
     transition: var(--transition);
 }
-header .navbar.scrolled{
-    background: #fff;
-    padding: 30px 0 15px;
-}
 .mega-products .navbar,
 .mega-services .navbar,
 .mega-locations .navbar{
     position: fixed !important;
     top: 0 !important;
-    background: transparent !important;
-    padding: 50px 0 26px !important;
 }
 .mega-locations .navbar{
     transition: none;
@@ -960,7 +954,7 @@ ul.countries-list li a.active{
     font-size: 11px;
 }
 .rent-buy-categories .category-item .category-info .category-title div{
-    color: #191f21;
+    color: var(--color-default);
 }
 .rent-buy-categories .category-item .category-info .category-explore{
     display: inline-block;
@@ -1762,7 +1756,7 @@ ul.countries-list li a.active{
     font-weight: 600;
     font-size: 15px;
     letter-spacing: -0.93px;
-    color: #191f21;
+    color: var(--color-default);
     padding: 15px 25px;
     margin-top: 15px;
 }
@@ -2003,7 +1997,7 @@ ul.countries-list li a.active{
 }
 /* Categories */
 .categories-page{
-    margin: 300px auto 100px;
+    margin: 100px auto 0;
 }
 .categories-wrapper{
     position: relative;
@@ -2021,6 +2015,9 @@ ul.countries-list li a.active{
     height: 100%;
     background: linear-gradient(to bottom, rgba(226, 226, 226, 0.04) 0%, rgba(113, 113, 113, 0.01) 100%);
     z-index: -1;
+}
+.categories-page .categories-wrapper:before{
+    display: none;
 }
 /* categories Filter */
 .categories-filter{
@@ -3361,12 +3358,38 @@ ul.countries-list li a.active{
     letter-spacing: -0.03em;
     color: #b8c2c4;
 }
+/* To top */
+#back-to-top {
+    opacity: 0;
+    position: fixed;
+    bottom: 2.604vw  /* 50/19.2 */;
+    right: 2.604vw  /* 50/19.2 */;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none !important;
+    border-radius: 50%;
+    border: 4px solid #bebfc5;
+    color: #bebfc5;
+    font-size: 20px;
+    text-decoration: none !important;
+    transition: opacity 0.5s ease-out;
+    z-index: 2;
+}
+#back-to-top.show {
+    opacity: 1;
+}
+#back-to-top img {
+    width: 60px;
+    height: 60px;
+}
 /* Footer */
 footer{
     position: relative;
-    background: #fff;
-    margin-top: 50px;
-    z-index: 1040;
+    margin-top: 200px;
+    z-index: 1;
 }
 .footer-logo, .your-gate{
     display: block;
@@ -4081,9 +4104,6 @@ footer .made-with i{
         margin-top: 50px;
         text-align: center;
     }
-    .categories-page {
-        margin: 200px auto 100px;
-    }
     .product-page:before {
         display: none;
     }
@@ -4189,7 +4209,6 @@ footer .made-with i{
     .navbar  .toggle-menu img{
         filter:  brightness(0) invert(1);
     }
-    .navbar.scrolled .toggle-menu img,
     .mega-products .navbar .toggle-menu img,
     .mega-services .navbar .toggle-menu img{
         filter:  none;

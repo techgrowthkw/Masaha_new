@@ -182,6 +182,34 @@ $(document).ready(function() {
         autoplayHoverPause:true
     });
 })
+// To top
+
+
+//ToTop scroller button
+$(document).ready(function(){
+    let toTop = $('#back-to-top');
+    if ('toTop'.length) {
+        let scrollTrigger = 150, // px
+            backToTop = function () {
+                let scrollTop = $(window).scrollTop();
+                if (scrollTop > scrollTrigger) {
+                    toTop.addClass('show');
+                } else {
+                    toTop.removeClass('show');
+                }
+            };
+        backToTop();
+        $(window).on('scroll', function () {
+            backToTop();
+        });
+        toTop.on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 700);
+        });
+    }
+});
 // Tooltip
 $(document).ready(function() {
     $(function () {

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="429.5" height="507.14" viewBox="0 0 429.5 507.14">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.03" x2="0.5" y2="0.919" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d9001a"/>
+      <stop offset="1" stop-color="#f03139" stop-opacity="0.588"/>
+    </linearGradient>
+  </defs>
+  <g id="Masaha-Chat-pop-Up-shape" transform="translate(0 0)">
+    <path id="Path_43873" data-name="Path 43873" d="M1832.576-196.86l-326.194-.541L1403.076-11.51c102.166-91.328,193.475-85.1,265.356-46.541-26.453-6.473-52.049-11.754-75.216-13.968C1480.694-80.266,1403.39-4.552,1403.39,13.789v295.95h429.186l-.023-194.679.023.044Z" transform="translate(-1403.076 197.401)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

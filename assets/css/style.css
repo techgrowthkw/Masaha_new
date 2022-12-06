@@ -1441,9 +1441,6 @@ ul.countries-list li a.active{
     justify-content: center;
     color: #fff;
 }
-.services-block > div{
-    margin: 20px;
-}
 .services-block .why-masaha{
     display: inline-block;
     font-weight: 900;
@@ -1451,6 +1448,7 @@ ul.countries-list li a.active{
     letter-spacing: -0.03em;
     line-height: 19px;
     text-transform: uppercase;
+    margin: 20px;
 }
 .services-block .why-masaha i{
     display: inline-block;
@@ -1460,6 +1458,8 @@ ul.countries-list li a.active{
 .service-item{
     display: inline-flex;
     align-items: center;
+    text-decoration: none !important;
+    margin: 20px;
 }
 .service-item .service-icon{
     display: inline-block;
@@ -3599,7 +3599,114 @@ footer .made-with i{
 .socials .fa-snapchat:hover{
     color: #000;
 }
+/* Pages  */
+.page-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+}
+.page-title{
+    display: block;
+    font-family: 'Goldman', serif;
+    font-weight: bold;
+    font-size: 42px;
+    letter-spacing: -0.05em;
+    line-height: 59px;
+    color: var(--color-primary);
+    text-align: center;
+    margin: 50px auto 30px;
+}
 
+.page-banner{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 25vw  /* 480/19.2 */;
+    margin-bottom: 5.208vw  /* 100/19.2 */;
+    overflow: hidden;
+}
+.page-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.page-text{
+    display: block;
+    font-weight: 500;
+    font-size: 1.25vw  /* 24/19.2 */;
+    letter-spacing: -0.03em;
+    line-height: 1.875vw  /* 36/19.2 */;
+    margin-bottom: 2.083vw  /* 40/19.2 */;
+}
+.service-page .page-text{
+    color: #000;
+}
+ul.page-list{
+    display: block;
+}
+ul.page-list li{
+    position: relative;
+    display: block;
+    font-weight: 500;
+    font-size: 1.146vw  /* 22/19.2 */;
+    letter-spacing: -0.03em;
+    padding-left: 1.198vw  /* 23/19.2 */;
+    margin: 12px auto;
+}
+ul.page-list li:before{
+    content: '';
+    position: absolute;
+    top: 0.55vw;
+    left: 0;
+    background: url("../images/Group 53908.svg") center no-repeat;
+    background-size: contain;
+    width: 0.729vw  /* 14/19.2 */;
+    height: 0.729vw  /* 14/19.2 */;
+}
+.page-info{
+    position: relative;
+    display: block;
+    padding: 0 2vw;
+    margin-top: 4.01vw  /* 77/19.2 */;
+}
+.page-info .page-info-title{
+    display: block;
+    font-weight: bold;
+    font-size: 1.198vw  /* 23/19.2 */;
+    letter-spacing: -0.05em;
+    line-height: 1.71875vw  /* 33/19.2 */;
+}
+.page-info .page-info-phone{
+    display: block;
+    font-weight: bold;
+    font-size: 2.135vw  /* 41/19.2 */;
+    line-height: 3.5vw;
+    letter-spacing: -0.02em;
+    color: var(--color-default);
+}
+.page-info .page-info-phone span{
+    color: var(--color-primary);
+}
+.page-info .page-info-mail{
+    display: block;
+    font-weight: 500;
+    font-size: 1.71875vw  /* 33/19.2 */;
+    letter-spacing: -0.05em;
+    line-height: 3.5vw;
+    color: #191f21;
+}
+#map{
+    display: block;
+    width: 100%;
+    height: 24.6875vw  /* 474/19.2 */;
+    border-radius: 2.604vw  /* 50/19.2 */;
+    margin: 2.604vw  /* 50/19.2 */ auto;
+
+}
 /* Responsive*/
 @media screen and (max-width: 1599px) {
     .vertical-tabs .nav-tabs .nav-link {
@@ -4252,14 +4359,12 @@ footer .made-with i{
         display: block;
         text-align: center;
     }
-    .services-block > div {
+    .services-block .why-masaha {
         margin: 15px;
-    }
-    .hero-footer-wrapper .hero-footer {
-        display: block;
     }
     .service-item {
         display: block;
+        margin: 15px;
     }
     .service-item .service-icon {
         display: block;
@@ -4267,8 +4372,12 @@ footer .made-with i{
         margin-left: auto;
         margin-right: auto;
     }
+
     .hero-footer-wrapper{
         display: none;
+    }
+    .hero-footer-wrapper .hero-footer {
+        display: block;
     }
     .equipments-wrapper {
         padding: 150px 0 0;

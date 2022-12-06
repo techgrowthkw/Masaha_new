@@ -171,6 +171,7 @@ a, a:hover {
     letter-spacing: -0.03em;
     text-transform: uppercase;
     transition:  var(--transition);
+    overflow: hidden;
 }
 .btn-outline-primary{
     position: relative;
@@ -190,6 +191,7 @@ a, a:hover {
     text-transform: uppercase;
     transition:  var(--transition);
     z-index: 1;
+    overflow: hidden;
 }
 .btn-outline-primary.view-all{
     font-size: 13px;
@@ -2473,7 +2475,7 @@ ul.countries-list li a.active{
 .rent-buy-tabs .nav-tabs .nav-link .tab-title{
     display: block;
     font-family: 'Goldman', serif;
-    font-weight: 800;
+    font-weight: bold;
     font-size: 44px;
     letter-spacing: -0.03em;
     line-height: 42px;
@@ -2494,7 +2496,7 @@ ul.countries-list li a.active{
 .rent-buy-content h3{
     display: block;
     font-family: 'Goldman', ser;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 29px;
     letter-spacing: -0.03em;
     line-height: 35px;
@@ -2645,7 +2647,7 @@ ul.countries-list li a.active{
     background: url("../images/Group 54694w.svg") center no-repeat;
     background-size: cover;
     border-radius: 0 0 0 75px;
-    width: 50%;
+    width: 48%;
     height: 1200px;
 }
 .product-page .breadcrumb{
@@ -2714,13 +2716,7 @@ ul.countries-list li a.active{
 }
 .product-short-details{
     position: relative;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 52px;
-    background: #f0f3f4;
-    padding: 35px;
+    display: block;
 }
 .product-page .from-series{
     display: block;
@@ -2758,7 +2754,7 @@ ul.countries-list li a.active{
 .product-page .product-short-details .product-code{
     font-size: 55px;
     line-height: 61px;
-    color: var(--color-primary);
+    color: var(--color-default);
 }
 .product-page .product-text{
     display: block;
@@ -2775,34 +2771,37 @@ ul.countries-list li a.active{
     color: #abb3b7;
     margin-top: 20px;
 }
+.product-page .product-short-details .product-details-title{
+    font-size: 9px;
+    line-height: 9px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
 .product-page .btn-outline-primary{
     margin-bottom: 20px;
 }
 .product-page .product-short-details .btn-outline-primary{
-    width: 163px;
-    height: 40px;
+    width: 196px;
+    height: 46px;
     margin-bottom: 0;
 }
-.product-page .product-short-details .btn-outline-primary:before{
-    width: 150px;
-    height: 28px;
-}
 .product-page .product-short-details .btn-outline-primary:after{
-    width: 19px;
-    height: 22px;
-    left: 10px;
+    display: none;
 }
-.product-page .product-short-details .btn-outline-primary:hover:after{
-    width: 105%;
-    height: 105%;
-    left: 0;
+.product-page .product-short-details .btn-outline-primary img{
+    width: 25px;
 }
 .product-page .btn-stock{
     position: relative;
     font-size: 17px;
     font-weight: bold;
-    width: 167px;
+    min-width: 167px;
     height: 31px;
+}
+.product-page .product-short-details .btn-stock{
+    font-size: 9px;
+    min-width: 100px;
+    height: 16px;
 }
 .product-page .btn-stock:before{
     content: '';
@@ -2957,7 +2956,6 @@ ul.countries-list li a.active{
     font-size: 53px;
     letter-spacing: -0.03em;
     line-height: 59px;
-    color: var(--color-primary);
     margin-bottom: 30px;
 }
 .request-quotation .form-control{
@@ -3100,6 +3098,9 @@ ul.countries-list li a.active{
     background: #F5F7F8;
     border: none !important;
     box-shadow: none;
+}
+.selected-product .remove-product img{
+    width: 20px;
 }
 .you-may-need{
     display: block;
@@ -3272,7 +3273,8 @@ ul.countries-list li a.active{
 }
 .thank-wrapper .thank-you{
     display: block;
-    font-weight: 900;
+    font-family: 'Goldman', serif;
+    font-weight: bold;
     font-size: 85px;
     letter-spacing: -0.03em;
     line-height: 95px;
@@ -3281,19 +3283,19 @@ ul.countries-list li a.active{
 }
 .thank-wrapper .thank-you span{
     display: inline-block;
-    color: var(--color-primary);
+    color: var(--color-default);
 }
 .thank-wrapper .for-choosing{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-weight: 900;
+    font-family: 'Goldman', serif;
+    font-weight: bold;
     font-size: 29px;
     letter-spacing: -0.03em;
     line-height: 38px;
     text-transform: uppercase;
-    color: var(--color-primary);
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -3304,12 +3306,12 @@ ul.countries-list li a.active{
 }
 .thank-wrapper .contacted-by{
     display: block;
+    font-family: 'Goldman', serif;
     font-weight: bold;
     font-size: 20px;
     letter-spacing: -0.03em;
     line-height: 26px;
     text-transform: uppercase;
-    color: var(--color-primary);
 }
 .need-help-block{
     position: relative;
@@ -3322,7 +3324,6 @@ ul.countries-list li a.active{
     font-weight: 600;
     font-size: 25px;
     letter-spacing: -0.06em;
-    color: var(--color-primary);
 }
 .need-help-block .chat-us{
     font-weight: 900;
@@ -3345,7 +3346,8 @@ ul.countries-list li a.active{
     font-size: 16px;
     letter-spacing: -0.03em;
     line-height: 16px;
-    color: #abb3b7;
+    color: var(--color-default);
+    opacity: 0.69;
 }
 .terms-use .terms-text{
     display: block;
@@ -3730,9 +3732,6 @@ footer .made-with i{
     }
     .product-page .product-info li p {
         font-size: 18px;
-    }
-    .product-short-details {
-        padding: 30px 20px;
     }
     .product-page .product-short-details .from-series {
         font-size: 14px;

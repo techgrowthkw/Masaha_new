@@ -380,7 +380,7 @@ header.mega-services > img{
     left: 0;
     right: 0;
     padding: 40px 0;
-    width: 100vw;
+    width: calc(100vw - 10px);
     height: calc(100vh - 160px);
     background: none;
     border: none;
@@ -396,11 +396,12 @@ header.mega-services > img{
 .location-menu-wrapper{
     text-align: center;
     padding-top: 0;
+    overflow: auto;
 }
 .mega-locations .location-menu-wrapper{
     transition: var(--transition);
 }
-.location-menu-wrapper:before{
+.mega-locations:before{
     content: '';
     position: fixed;
     bottom: 0;
@@ -2896,6 +2897,8 @@ ul.countries-list li a.active{
     transition:  var(--transition);
 }
 .product-page .thumbnail-carousel{
+    position: sticky;
+    top: 50px;
     padding: 0 60px;
     margin-top: 10px;
     margin-bottom: 5px;

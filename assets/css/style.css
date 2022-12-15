@@ -2889,16 +2889,19 @@ ul.countries-list li a.active{
     margin-top: 10px;
 }
 /* Carousel */
-.product-page .main-carousel{
+.product-page .product-gallery{
+    position: sticky;
+    top: 100px;
+}
+/*.product-page .main-carousel{
     position: sticky;
     top: 230px;
-}
+}*/
 .product-page .splide__slide {
     transition:  var(--transition);
 }
 .product-page .thumbnail-carousel{
-    position: sticky;
-    top: 50px;
+
     padding: 0 60px;
     margin-top: 10px;
     margin-bottom: 5px;

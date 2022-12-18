@@ -181,6 +181,18 @@ $(document).ready(function() {
         autoplayTimeout:4000,
         autoplayHoverPause:true
     });
+    $('.owl-carousel.project-gallery-slider').owlCarousel({
+        loop: true,
+        dots: true,
+        nav:false,
+        center: true,
+        margin: 50,
+        autoWidth: true,
+        responsiveClass: false,
+        autoplay:true,
+        autoplayTimeout:4000,
+        autoplayHoverPause:true
+    });
 })
 // To top
 

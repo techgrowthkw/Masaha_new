@@ -4544,6 +4544,139 @@ ul.page-list li:before{
     border-left: 1px  solid #BAC2C4;
     padding-left: 20px;
 }
+/* About */
+.about-block{
+    position: relative;
+    display: block;
+    min-height: 53.333vw  /* 1024/19.2 */;
+    overflow: hidden;
+    z-index: 9;
+}
+.about-block:nth-of-type(2){
+    margin-top: 10.417vw  /* 200/19.2 */;
+}
+.about-block > img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -18.4375vw  /* -354/19.2 */;
+    width: 63.646vw  /* 1222/19.2 */;
+    height: auto;
+    object-fit: contain;
+    z-index: -1;
+}
+.about-block:nth-of-type(2) > img{
+    right: auto;
+    left: -19.01vw  /* -365/19.2 */;
+    width: 67.708vw  /* 1300/19.2 */;
+}
+.about-block .about-title{
+    position: relative;
+    display: block;
+    font-weight: 900;
+    font-size: 2.34375vw  /* 45/19.2 */;
+    height: 3.073vw  /* 59/19.2 */;
+    letter-spacing: -0.03em;
+    color: var(--color-primary);
+    margin-top: 2.604vw  /* 50/19.2 */;
+    margin-bottom: 0.417vw  /* 8/19.2 */;
+}
+.about-block .about-title:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5.46875vw  /* -105/19.2 */;
+    background: url("../images/Masaha-ABoutPage-Our-Mission-Icon.png") center no-repeat;
+    background-size: contain;
+    width: 4.115vw  /* 79/19.2 */;
+    height: 3.646vw  /* 70/19.2 */;
+}
+.about-block .about-text{
+    position: relative;
+    display: block;
+    font-weight: 500;
+    font-size: 1.302vw  /* 25/19.2 */;
+    line-height: 1.771vw  /* 34/19.2 */;
+    letter-spacing: -0.03em;
+    color: #000;
+    margin-bottom: 0;
+}
+.about-block .about-our-mission{
+    padding-left: 2vw;
+}
+.about-block .about-our-vision{
+    padding-left: 9vw;
+}
+.about-block .about-our-goal{
+    padding-left: 14vw;
+    margin-top: 3.8vw;
+}
+.about-block .about-our-values{
+    padding-left: 8vw;
+}
+.why-masaha{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.why-masaha .why-text{
+    display: inline-block;
+    font-weight: 900;
+    font-size: 62px;
+    letter-spacing: -0.05em;
+    line-height: 86px;
+    color: var(--color-primary);
+}
+.why-masaha img{
+    display: inline-block;
+    height: 50px;
+    margin-left: 30px;
+    margin-right: -70px;
+    z-index: 1;
+}
+.why-masaha .why-question{
+    display: inline-block;
+    font-weight: 900;
+    font-size: 237px;
+    letter-spacing: -0.05em;
+    line-height: 330px;
+}
+.why-wrapper{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background: url("../images/DJI_0344.png") center no-repeat fixed;
+    background-size: cover;
+    padding: 10.417vw  /* 200/19.2 */ 0;
+    z-index: 2;
+}
+.why-wrapper:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #4a3a3b;
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.why-wrapper .why-text{
+    display: block;
+    font-weight: 500;
+    font-size: 1.146vw  /* 22/19.2 */;
+    letter-spacing: -0.03em;
+    line-height: 1.5625vw  /* 30/19.2 */;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2.5vw;
+}
+.why-wrapper + footer{
+    margin-top: 0;
+}
 /* Responsive*/
 @media screen and (max-width: 1599px) {
     .vertical-tabs .nav-tabs .nav-link {

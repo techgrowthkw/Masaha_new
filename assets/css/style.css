@@ -6141,7 +6141,7 @@ ul.page-list li:before{
         line-height: 200px;
     }
     .page-banner {
-        min-height: 150px;
+        min-height: 120px;
     }
     .page-title {
         font-size: 24px;

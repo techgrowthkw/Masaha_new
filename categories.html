@@ -1047,7 +1047,7 @@
                             <input type="search" class="form-control" placeholder="Filter by type anything ..." aria-label="search">
                         </div>
                         <div class="checkboxes-group">
-                            <label class="checkbox-container">
+                            <label class="checkbox-container" data-filter=".concreteMachinery">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                                 <div class="category-item">
@@ -1062,7 +1062,7 @@
                                     </div>
                                 </div>
                             </label>
-                            <label class="checkbox-container">
+                            <label class="checkbox-container " data-filter=".wheelLoader">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                                 <div class="category-item">
@@ -1077,7 +1077,7 @@
                                     </div>
                                 </div>
                             </label>
-                            <label class="checkbox-container">
+                            <label class="checkbox-container" data-filter=".crawlerCranes">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                                 <div class="category-item">
@@ -1092,7 +1092,7 @@
                                     </div>
                                 </div>
                             </label>
-                            <label class="checkbox-container">
+                            <label class="checkbox-container" data-filter=".roadMachinery">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                                 <div class="category-item">
@@ -1107,7 +1107,7 @@
                                     </div>
                                 </div>
                             </label>
-                            <label class="checkbox-container">
+                            <label class="checkbox-container" data-filter=".forkliftMachines">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                                 <div class="category-item">
@@ -1122,22 +1122,7 @@
                                     </div>
                                 </div>
                             </label>
-                            <label class="checkbox-container">
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                <div class="category-item">
-                                    <div class="category-icon">
-                                        <img src="assets/images/categories/excavators-machines.svg" alt="">
-                                    </div>
-                                    <div class="category-details">
-                                        <div class="category-title">
-                                            Excavators
-                                            <div>machines</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </label>
-                            <label class="checkbox-container">
+                            <label class="checkbox-container" data-filter=".mobileCranes">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                                 <div class="category-item">
@@ -1152,7 +1137,7 @@
                                     </div>
                                 </div>
                             </label>
-                            <label class="checkbox-container">
+                            <label class="checkbox-container" data-filter=".towerCranes">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                                 <div class="category-item">
@@ -1167,7 +1152,7 @@
                                     </div>
                                 </div>
                             </label>
-                            <label class="checkbox-container">
+                            <label class="checkbox-container" data-filter=".portMachinery">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                                 <div class="category-item">
@@ -1205,9 +1190,9 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-12 col-sm-6 col-xl-4">
-                            <div class="popular-equipment-item">
+                    <div class="row grid">
+                        <div class="col-12 col-sm-6 col-xl-4 concreteMachinery">
+                            <div class="popular-equipment-item wheelLoader">
                                 <a href="product-single.html" class="equipment-img">
                                     <img src="assets/images/product-img-9.png" alt="">
                                 </a>
@@ -1261,7 +1246,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="col-12 col-sm-6 col-xl-4 wheelLoader">
                             <div class="popular-equipment-item">
                                 <a href="product-single.html" class="equipment-img">
                                     <img src="assets/images/product-img-10.png" alt="">
@@ -1316,7 +1301,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="col-12 col-sm-6 col-xl-4 crawlerCranes">
                             <div class="popular-equipment-item">
                                 <a href="product-single.html" class="equipment-img">
                                     <img src="assets/images/product-img-8.png" alt="">
@@ -1371,7 +1356,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="col-12 col-sm-6 col-xl-4 roadMachinery">
                             <div class="popular-equipment-item">
                                 <a href="product-single.html" class="equipment-img">
                                     <img src="assets/images/product-img-9.png" alt="">
@@ -1431,7 +1416,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="col-12 col-sm-6 col-xl-4 forkliftMachines">
                             <div class="popular-equipment-item">
                                 <a href="product-single.html" class="equipment-img">
                                     <img src="assets/images/product-img-10.png" alt="">
@@ -1486,7 +1471,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="col-12 col-sm-6 col-xl-4 excavatorsMachines">
                             <div class="popular-equipment-item">
                                 <a href="product-single.html" class="equipment-img">
                                     <img src="assets/images/product-img-1.png" alt="">
@@ -1541,6 +1526,231 @@
                                             not available
                                         </div>
                                     </a>
+                                    <span class="px-1"></span>
+                                    <a href="#" class="btn btn-primary">Buy</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-4 excavatorsMachines">
+                            <div class="popular-equipment-item">
+                                <a href="product-single.html" class="equipment-img">
+                                    <img src="assets/images/product-img-10.png" alt="">
+                                </a>
+                                <div class="equipment-title">
+                                    All Terrain Crane 100 Ton - SAN
+                                </div>
+                                <div class="equipment-details">
+                                    <div class="equipment-logo">
+                                        <img src="assets/images/Masaha-Logo.svg" alt="">
+                                    </div>
+                                    <ul class="equipment-features">
+                                        <li>
+                                            <div class="feature-icon">
+                                                <img src="assets/images/Group%2099.svg" alt="">
+                                            </div>
+                                            <div class="feature-info">
+                                                60000
+                                                <div>
+                                                    kg
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="feature-icon">
+                                                <img src="assets/images/Group%20118.svg" alt="">
+                                            </div>
+                                            <div class="feature-info">
+                                                62
+                                                <div>
+                                                    m
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="feature-icon">
+                                                <img src="assets/images/Group%20117.svg" alt="">
+                                            </div>
+                                            <div class="feature-info">
+                                                180t
+                                                <div>
+                                                    ton
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-primary">Rent</a>
+                                    <span class="px-1"></span>
+                                    <a href="#" class="btn btn-primary">Buy</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-4 mobileCranes">
+                            <div class="popular-equipment-item">
+                                <a href="product-single.html" class="equipment-img">
+                                    <img src="assets/images/product-img-8.png" alt="">
+                                </a>
+                                <div class="equipment-title">
+                                    All Terrain Crane 100 Ton - SAN
+                                </div>
+                                <div class="equipment-details">
+                                    <div class="equipment-logo">
+                                        <img src="assets/images/Masaha-Logo.svg" alt="">
+                                    </div>
+                                    <ul class="equipment-features">
+                                        <li>
+                                            <div class="feature-icon">
+                                                <img src="assets/images/Group%2099.svg" alt="">
+                                            </div>
+                                            <div class="feature-info">
+                                                60000
+                                                <div>
+                                                    kg
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="feature-icon">
+                                                <img src="assets/images/Group%20118.svg" alt="">
+                                            </div>
+                                            <div class="feature-info">
+                                                62
+                                                <div>
+                                                    m
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="feature-icon">
+                                                <img src="assets/images/Group%20117.svg" alt="">
+                                            </div>
+                                            <div class="feature-info">
+                                                180t
+                                                <div>
+                                                    ton
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-primary">Rent</a>
+                                    <span class="px-1"></span>
+                                    <a href="#" class="btn btn-primary">Buy</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-4 towerCranes">
+                            <div class="popular-equipment-item">
+                                <a href="product-single.html" class="equipment-img">
+                                    <img src="assets/images/product-img-9.png" alt="">
+                                </a>
+                                <div class="equipment-title">
+                                    All Terrain Crane 100 Ton - SAN
+                                </div>
+                                <div class="equipment-details">
+                                    <div class="equipment-logo">
+                                        <img src="assets/images/Masaha-Logo.svg" alt="">
+                                    </div>
+                                    <ul class="equipment-features">
+                                        <li>
+                                            <div class="feature-icon">
+                                                <img src="assets/images/Group%2099.svg" alt="">
+                                            </div>
+                                            <div class="feature-info">
+                                                60000
+                                                <div>
+                                                    kg
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="feature-icon">
+                                                <img src="assets/images/Group%20118.svg" alt="">
+                                            </div>
+                                            <div class="feature-info">
+                                                62
+                                                <div>
+                                                    m
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="feature-icon">
+                                                <img src="assets/images/Group%20117.svg" alt="">
+                                            </div>
+                                            <div class="feature-info">
+                                                180t
+                                                <div>
+                                                    ton
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-primary disabled">
+                                        Rent
+                                        <div class="not-available">
+                                            not available
+                                        </div>
+                                    </a>
+                                    <span class="px-1"></span>
+                                    <a href="#" class="btn btn-primary">Buy</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-4 portMachinery">
+                            <div class="popular-equipment-item">
+                                <a href="product-single.html" class="equipment-img">
+                                    <img src="assets/images/product-img-10.png" alt="">
+                                </a>
+                                <div class="equipment-title">
+                                    All Terrain Crane 100 Ton - SAN
+                                </div>
+                                <div class="equipment-details">
+                                    <div class="equipment-logo">
+                                        <img src="assets/images/Masaha-Logo.svg" alt="">
+                                    </div>
+                                    <ul class="equipment-features">
+                                        <li>
+                                            <div class="feature-icon">
+                                                <img src="assets/images/Group%2099.svg" alt="">
+                                            </div>
+                                            <div class="feature-info">
+                                                60000
+                                                <div>
+                                                    kg
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="feature-icon">
+                                                <img src="assets/images/Group%20118.svg" alt="">
+                                            </div>
+                                            <div class="feature-info">
+                                                62
+                                                <div>
+                                                    m
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="feature-icon">
+                                                <img src="assets/images/Group%20117.svg" alt="">
+                                            </div>
+                                            <div class="feature-info">
+                                                180t
+                                                <div>
+                                                    ton
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-primary">Rent</a>
                                     <span class="px-1"></span>
                                     <a href="#" class="btn btn-primary">Buy</a>
                                 </div>

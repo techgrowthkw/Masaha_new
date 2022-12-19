@@ -243,6 +243,18 @@ $(document).ready(function(){
     );
     wow.init()
 });
+$(document).ready( function() {
+
+    // init Isotope
+    var $grid = $('.grid').isotope({
+        // options
+    });
+    // filter items on button click
+    $('.checkboxes-group').on( 'click', '.checkbox-container', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+    });
+})
 // Map
 function myMap() {
     var mapCanvas = document.getElementById("map");

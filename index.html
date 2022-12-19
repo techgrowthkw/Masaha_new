@@ -2227,7 +2227,7 @@
                             <input type="search" class="form-control" placeholder="Filter by type anything ..." aria-label="search">
                         </div>
                         <div class="checkboxes-group">
-                            <label class="checkbox-container">
+                            <label class="checkbox-container" data-filter=".concreteMachinery">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                                 <div class="category-item">
@@ -2242,7 +2242,7 @@
                                     </div>
                                 </div>
                             </label>
-                            <label class="checkbox-container">
+                            <label class="checkbox-container " data-filter=".wheelLoader">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                                 <div class="category-item">
@@ -2257,7 +2257,7 @@
                                     </div>
                                 </div>
                             </label>
-                            <label class="checkbox-container">
+                            <label class="checkbox-container" data-filter=".crawlerCranes">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                                 <div class="category-item">
@@ -2272,7 +2272,7 @@
                                     </div>
                                 </div>
                             </label>
-                            <label class="checkbox-container">
+                            <label class="checkbox-container" data-filter=".roadMachinery">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                                 <div class="category-item">
@@ -2287,7 +2287,7 @@
                                     </div>
                                 </div>
                             </label>
-                            <label class="checkbox-container">
+                            <label class="checkbox-container" data-filter=".forkliftMachines">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                                 <div class="category-item">
@@ -2302,22 +2302,7 @@
                                     </div>
                                 </div>
                             </label>
-                            <label class="checkbox-container">
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                <div class="category-item">
-                                    <div class="category-icon">
-                                        <img src="assets/images/categories/excavators-machines.svg" alt="">
-                                    </div>
-                                    <div class="category-details">
-                                        <div class="category-title">
-                                            Excavators
-                                            <div>machines</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </label>
-                            <label class="checkbox-container">
+                            <label class="checkbox-container" data-filter=".mobileCranes">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                                 <div class="category-item">
@@ -2332,7 +2317,7 @@
                                     </div>
                                 </div>
                             </label>
-                            <label class="checkbox-container">
+                            <label class="checkbox-container" data-filter=".towerCranes">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                                 <div class="category-item">
@@ -2347,7 +2332,7 @@
                                     </div>
                                 </div>
                             </label>
-                            <label class="checkbox-container">
+                            <label class="checkbox-container" data-filter=".portMachinery">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                                 <div class="category-item">
@@ -2385,9 +2370,9 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-12 col-sm-6 col-xl-4">
-                            <div class="popular-equipment-item">
+                    <div class="row grid">
+                        <div class="col-12 col-sm-6 col-xl-4 concreteMachinery portMachinery">
+                            <div class="popular-equipment-item wheelLoader">
                                 <a href="product-single.html" class="equipment-img">
                                     <img src="assets/images/product-img-9.png" alt="">
                                 </a>
@@ -2441,7 +2426,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="col-12 col-sm-6 col-xl-4 wheelLoader towerCranes">
                             <div class="popular-equipment-item">
                                 <a href="product-single.html" class="equipment-img">
                                     <img src="assets/images/product-img-10.png" alt="">
@@ -2496,7 +2481,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="col-12 col-sm-6 col-xl-4 crawlerCranes mobileCranes">
                             <div class="popular-equipment-item">
                                 <a href="product-single.html" class="equipment-img">
                                     <img src="assets/images/product-img-8.png" alt="">
@@ -2551,7 +2536,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="col-12 col-sm-6 col-xl-4 roadMachinery excavatorsMachines">
                             <div class="popular-equipment-item">
                                 <a href="product-single.html" class="equipment-img">
                                     <img src="assets/images/product-img-9.png" alt="">
@@ -2611,7 +2596,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="col-12 col-sm-6 col-xl-4 forkliftMachines">
                             <div class="popular-equipment-item">
                                 <a href="product-single.html" class="equipment-img">
                                     <img src="assets/images/product-img-10.png" alt="">
@@ -2666,7 +2651,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="col-12 col-sm-6 col-xl-4 excavatorsMachines">
                             <div class="popular-equipment-item">
                                 <a href="product-single.html" class="equipment-img">
                                     <img src="assets/images/product-img-1.png" alt="">
@@ -3378,6 +3363,7 @@
 <script src="assets/js/bootstrap.bundle.min.js" ></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/splide.min.js"></script>
+<script src="assets/js/isotope.min.js"></script>
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>

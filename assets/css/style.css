@@ -2664,10 +2664,14 @@ ul.countries-list li a.active{
     width: 48%;
     height: 1200px;
 }
+
 .product-page.contact-page:before{
     right: auto;
     left: 0;
     border-radius: 0 0 75px 0;
+}
+.product-page .col-lg-5{
+    padding-left: 40px;
 }
 .product-page .breadcrumb{
     background: none;
@@ -2693,7 +2697,7 @@ ul.countries-list li a.active{
 }
 .product-page .product-category{
     position: absolute;
-    left: -80px;
+    left: -50px;
     width: 77px;
     height: 103px;
     border-radius: 17px;
@@ -5274,7 +5278,7 @@ ul.page-list li:before{
     .vertical-tabs .nav-tabs {
         display: flex;
         flex-flow: row;
-        align-items: center;
+        align-items: end;
         justify-content: space-evenly;
     }
     .vertical-tabs .nav-tabs .nav-link {
@@ -5989,14 +5993,15 @@ ul.page-list li:before{
         width: 280px;
         height: 100vh;
         overflow-y: auto;
-        background: #fff;
+        background: var(--color-default);
         margin: 0;
         padding: 20px;
-        z-index: 99;
+        z-index: 9999;
         transition:  var(--transition);
     }
     .side-wrapper.active {
         left: 0;
+        display: block !important;
     }
     .side-wrapper::-webkit-scrollbar {
         width: 4px;
@@ -6019,7 +6024,7 @@ ul.page-list li:before{
         width: 100%;
         font-size: 24px;
         font-weight: 500;
-        color: var(--color-primary);
+        color: #fff;
         text-decoration: none !important;
         transition:  var(--transition);
     }

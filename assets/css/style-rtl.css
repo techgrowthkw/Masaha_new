@@ -262,7 +262,7 @@ body{
 }
 .product-page .product-category{
     left: auto;
-    right: -80px;
+    right: -50px;
 }
 .product-page .product-short-details .btn-outline-primary:after{
     left: auto;

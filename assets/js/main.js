@@ -148,6 +148,7 @@ $(document).ready(function() {
         responsiveClass:true,
         responsive:{
             0:{
+                autoWidth: false,
                 items:1,
             },
             992:{

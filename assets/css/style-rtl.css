@@ -7,7 +7,7 @@ body{
 }
 body{
     font-family: 'Cairo' , 'Montserrat', 'Spartan', 'Spartan MB' , 'Goldman' ,Arial,sans-serif;
-    letter-spacing: -0.03rem;
+    letter-spacing: 0.03rem;
 }
 .btn-outline-primary, .btn-outline-secondary,
 .navbar-nav > .nav-item > .nav-link,

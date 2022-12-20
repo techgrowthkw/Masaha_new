@@ -127,6 +127,46 @@ body{
     src: url('../fonts/Goldman-Bold.ttf');
     font-weight: bold;
 }
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-ExtraLight.ttf');
+    font-weight: 200
+}
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-Light.ttf');
+    font-weight: 300
+}
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-Regular.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-Bold.ttf');
+    font-weight: bold
+}
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-ExtraBold.ttf');
+    font-weight: 800
+}
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-Black.ttf');
+    font-weight: 900;
+}
 * {
     box-sizing: border-box;
     outline: none !important;
@@ -171,7 +211,6 @@ a, a:hover {
     box-shadow: none !important;
     font-weight: 500;
     font-size: 21px;
-    letter-spacing: -0.03em;
     text-transform: uppercase;
     transition:  var(--transition);
     overflow: hidden;
@@ -462,7 +501,6 @@ header.mega-services > img{
     display: inline-block;
     font-weight: 900;
     font-size: 25px;
-    letter-spacing: -0.03em;
     line-height: 28px;
     text-decoration: none !important;
     color: #b8c2c4;
@@ -492,7 +530,6 @@ header.mega-services > img{
     font-family: 'Goldman', serif;
     font-weight: bold;
     font-size: 56px;
-    letter-spacing: -0.03em;
     color: var(--color-default);
     margin: 0 18px;
 }
@@ -512,7 +549,6 @@ ul.countries-list li{
     display: block;
     font-weight: bold;
     font-size: 27px;
-    letter-spacing: -0.03em;
     line-height: 30px;
     color: #455157;
     margin: 5px auto;
@@ -526,7 +562,6 @@ ul.countries-list li a{
     display: block;
     font-weight: 500;
     font-size: 23px;
-    letter-spacing: -0.03em;
     line-height: 30px;
     color: #132944;
     transition:  var(--transition);
@@ -560,7 +595,6 @@ ul.countries-list li a.active{
     margin: 0;
     font-weight: 500;
     font-size: 23px;
-    letter-spacing: -0.03em;
     text-transform: capitalize;
 }
 .location-country .country-map{
@@ -595,7 +629,6 @@ ul.countries-list li a.active{
     font-family: 'Goldman', serif;
     font-weight: bold;
     font-size: 31px;
-    letter-spacing: -0.03em;
     line-height: 29px;
     color: #bac2c4 !important;
     background: none !important;
@@ -666,7 +699,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 900;
     font-size: 21px;
-    letter-spacing: -0.03em;
     line-height: 23px;
     text-transform: uppercase;
     color: var(--color-primary);
@@ -684,7 +716,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 500;
     font-size: 14px;
-    letter-spacing: -0.03em;
     line-height: 16px;
     color: var(--color-default);
     margin-top: 6px;
@@ -699,7 +730,6 @@ ul.countries-list li a.active{
     background: rgba(184, 194, 196, 0.27);
     font-weight: 500;
     font-size: 14px;
-    letter-spacing: -0.03em;
     color: var(--color-default);
     padding: 6px 12px;
     margin: 6px 0 0;
@@ -761,7 +791,6 @@ ul.countries-list li a.active{
     display: inline-block;
     font-weight: bold;
     font-size: 14px;
-    letter-spacing: -0.03em;
     line-height: 15px;
     color: var(--color-primary);
     margin: 0 7px;
@@ -770,7 +799,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: bold;
     font-size: 30px;
-    letter-spacing: -0.03em;
     line-height: 32px;
     color: #455157;
 }
@@ -804,7 +832,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 500;
     font-size: 19px;
-    letter-spacing: -0.03em;
     line-height: 19px;
     text-align: center;
     text-transform: uppercase;
@@ -846,7 +873,6 @@ ul.countries-list li a.active{
     display: inline-block;
     font-weight: 600;
     font-size: 20px;
-    letter-spacing: -0.02em;
     text-decoration: none !important;
     color: var(--color-default);
     transition: var(--transition);
@@ -884,7 +910,6 @@ ul.countries-list li a.active{
     font-family: 'Goldman', serif;
     font-weight: bold;
     font-size: 53px;
-    letter-spacing: -0.03em;
     line-height: 50px;
     text-align: initial;
     text-transform: uppercase;
@@ -946,7 +971,6 @@ ul.countries-list li a.active{
     display: inline-block;
     font-weight: 900;
     font-size: 22px;
-    letter-spacing: -0.03em;
     line-height: 24px;
     text-transform: uppercase;
     text-align: start;
@@ -967,7 +991,6 @@ ul.countries-list li a.active{
     display: inline-block;
     font-weight: 500;
     font-size: 7px;
-    letter-spacing: -0.03em;
     line-height: 8px;
     color: var(--color-default);
     text-align: center;
@@ -1138,7 +1161,6 @@ ul.countries-list li a.active{
     box-shadow: none !important;
     font-weight: bold;
     font-size: 18px;
-    letter-spacing: -0.03em;
     line-height: 18px;
     text-align: center;
     color: #455157;
@@ -1176,7 +1198,6 @@ ul.countries-list li a.active{
     padding-left: 35px;
     font-weight: 500;
     font-size: 15px;
-    letter-spacing: -0.03em;
     color: #6f7e83;
 }
 .search-group .input-group .btn-primary{
@@ -1245,7 +1266,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: bold;
     font-size: 14px;
-    letter-spacing: -0.03em;
     line-height: 15px;
     color: #455157;
 }
@@ -1279,7 +1299,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 500;
     font-size: 11px;
-    letter-spacing: -0.03em;
     line-height: 12px;
     text-align: center;
     color: #000;
@@ -1352,7 +1371,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 500;
     font-size: 12px;
-    letter-spacing: -0.03em;
     line-height: 15px;
     color: #abb3b7;
     margin-top: 10px;
@@ -1436,7 +1454,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 500;
     font-size: 8px;
-    letter-spacing: -0.03em;
     line-height: 9px;
     text-align: center;
     color: #000;
@@ -1454,7 +1471,6 @@ ul.countries-list li a.active{
     display: inline-block;
     font-weight: 900;
     font-size: 20px;
-    letter-spacing: -0.03em;
     line-height: 19px;
     text-transform: uppercase;
     margin: 20px;
@@ -1563,21 +1579,18 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 500;
     font-size: 13px;
-    letter-spacing: -0.03em;
     line-height: 16px;
 }
 .need-category .category-details .category-title{
     display: block;
     font-weight: 900;
     font-size: 17px;
-    letter-spacing: -0.03em;
     line-height: 21px;
     margin-bottom: 5px;
 }
 .need-category .category-details .category-info{
     display: block;
     font-size: 8px;
-    letter-spacing: -0.03em;
     line-height: 9px;
     color: #455157;
 }
@@ -1612,7 +1625,6 @@ ul.countries-list li a.active{
 .masaha-service .service-name{
     font-weight: 500;
     font-size: 18px;
-    letter-spacing: -0.03em;
     line-height: 24px;
     color: #455157;
 }
@@ -1770,7 +1782,6 @@ ul.countries-list li a.active{
     background: #fff;
     font-weight: 600;
     font-size: 15px;
-    letter-spacing: -0.93px;
     color: var(--color-default);
     padding: 15px 25px;
     margin-top: 15px;
@@ -1813,7 +1824,6 @@ ul.countries-list li a.active{
     display: block;
     font-family: 'Goldman', serif;
     font-weight: bold;
-    letter-spacing: -0.03em;
     line-height: 39px;
     color: var(--color-default);
     text-transform: uppercase;
@@ -1831,7 +1841,6 @@ ul.countries-list li a.active{
     position: relative;
     font-weight: bold;
     font-size: 18px;
-    letter-spacing: -0.03em;
     line-height: 26px;
     color: var(--color-primary);
     margin-top: 10px;
@@ -1920,7 +1929,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 900;
     font-size: 10px;
-    letter-spacing: -0.03em;
     line-height: 11px;
     text-transform: uppercase;
     color: #b8c2c4;
@@ -1934,7 +1942,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 900;
     font-size: 22px;
-    letter-spacing: -0.03em;
     line-height: 24px;
     text-transform: uppercase;
     color: #b8c2c4;
@@ -1948,7 +1955,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 900;
     font-size: 42px;
-    letter-spacing: -0.03em;
     line-height: 47px;
     color: #b8c2c4;
 }
@@ -1988,7 +1994,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 500;
     font-size: 15px;
-    letter-spacing: -0.03em;
     line-height: 15px;
     text-align: center;
     text-transform: uppercase;
@@ -2050,7 +2055,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: bold;
     font-size: 29px;
-    letter-spacing: -0.03em;
     line-height: 35px;
 }
 .categories-filter .categories-filter-title span{
@@ -2076,7 +2080,6 @@ ul.countries-list li a.active{
     box-shadow: none;
     font-weight: 500;
     font-size: 13px;
-    letter-spacing: -0.03em;
     line-height: 8px;
     color: #6f7e83;
 }
@@ -2173,7 +2176,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 900;
     font-size: 13px;
-    letter-spacing: -0.03em;
     line-height: 14px;
     text-transform: uppercase;
     color: var(--color-default);
@@ -2188,7 +2190,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 500;
     font-size: 8px;
-    letter-spacing: -0.03em;
     line-height: 9px;
     color: var(--color-primary);
     margin-top: 6px;
@@ -2205,7 +2206,6 @@ ul.countries-list li a.active{
     font-family: 'Goldman', serif;
     font-weight: bold;
     font-size: 29px;
-    letter-spacing: -0.03em;
     line-height: 35px;
     white-space: nowrap;
     margin-right: 60px;
@@ -2217,7 +2217,6 @@ ul.countries-list li a.active{
 .popular-equipment-header .filter-result{
     font-weight: normal;
     font-size: 17px;
-    letter-spacing: -0.03em;
     line-height: 18px;
     color: #191f21;
     margin-top: 4px;
@@ -2238,7 +2237,6 @@ ul.countries-list li a.active{
     box-shadow: none;
     font-weight: 500;
     font-size: 13px;
-    letter-spacing: -0.03em;
     line-height: 8px;
     color: #6f7e83;
 }
@@ -2276,7 +2274,6 @@ ul.countries-list li a.active{
     width: 100%;
     font-weight: bold;
     font-size: 18px;
-    letter-spacing: -0.03em;
     line-height: 19px;
     color: var(--color-primary);
     white-space: nowrap;
@@ -2330,7 +2327,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 500;
     font-size: 11px;
-    letter-spacing: -0.03em;
     line-height: 11px;
     text-align: center;
     color: #000;
@@ -2358,7 +2354,6 @@ ul.countries-list li a.active{
     border-radius: 27px;
     font-weight: 500;
     font-size: 18px;
-    letter-spacing: -0.03em;
     line-height: 19px;
     color: #455157;
     transition:  var(--transition);
@@ -2393,7 +2388,6 @@ ul.countries-list li a.active{
 .popular-equipment-item .btn-primary.disabled .not-available{
     font-weight: 500;
     font-size: 10px;
-    letter-spacing: -0.03em;
 }
 /* Location */
 .location-wrapper{
@@ -2408,7 +2402,6 @@ ul.countries-list li a.active{
     font-family: 'Goldman', serif;
     font-weight: 500;
     font-size: 51px;
-    letter-spacing: -0.03em;
     line-height: 57px;
     color: var(--color-primary);
 }
@@ -2423,7 +2416,6 @@ ul.countries-list li a.active{
     font-family: 'Goldman', serif;
     font-weight: 500;
     font-size: 51px;
-    letter-spacing: -0.03em;
     line-height: 50px;
     text-transform: uppercase;
     margin: 35px auto;
@@ -2491,7 +2483,6 @@ ul.countries-list li a.active{
     font-family: 'Goldman', serif;
     font-weight: bold;
     font-size: 44px;
-    letter-spacing: -0.03em;
     line-height: 42px;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -2500,7 +2491,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: normal;
     font-size: 16px;
-    letter-spacing: -0.03em;
     line-height: 19px;
 }
 .rent-buy-content {
@@ -2509,10 +2499,9 @@ ul.countries-list li a.active{
 }
 .rent-buy-content h3{
     display: block;
-    font-family: 'Goldman', ser;
+    font-family: 'Goldman', serif;
     font-weight: bold;
     font-size: 29px;
-    letter-spacing: -0.03em;
     line-height: 35px;
     text-transform: uppercase;
     color: #fff;
@@ -2521,7 +2510,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: normal;
     font-size: 16px;
-    letter-spacing: -0.03em;
     line-height: 19px;
     color: #fff;
 }
@@ -2572,7 +2560,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 800;
     font-size: 51px;
-    letter-spacing: -0.03em;
     line-height: 50px;
     text-align: center;
     text-transform: uppercase;
@@ -2635,14 +2622,12 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 500;
     font-size: 15px;
-    letter-spacing: -0.03em;
     margin: 60px auto 0;
 }
 .partners-wrapper .partners-text-2{
     display: block;
     font-weight: 500;
     font-size: 12px;
-    letter-spacing: -0.03em;
     color: #B8C2C4;
     margin: 30px auto;
 }
@@ -2681,7 +2666,6 @@ ul.countries-list li a.active{
 .product-page .breadcrumb .breadcrumb-item{
     font-weight: 500;
     font-size: 16px;
-    letter-spacing: -0.03em;
     line-height: 16px;
     color: #abb3b7;
 }
@@ -2730,7 +2714,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 500;
     font-size: 8px;
-    letter-spacing: -0.03em;
     line-height: 9px;
     color: #000;
     text-transform: uppercase;
@@ -2745,7 +2728,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 900;
     font-size: 27px;
-    letter-spacing: -0.03em;
     line-height: 30px;
     text-transform: uppercase;
 }
@@ -2757,7 +2739,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 900;
     font-size: 44px;
-    letter-spacing: -0.03em;
     line-height: 48px;
     text-transform: uppercase;
 }
@@ -2769,7 +2750,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 900;
     font-size: 88px;
-    letter-spacing: -0.03em;
     line-height: 98px;
     text-transform: uppercase;
     color: var(--color-primary);
@@ -2783,13 +2763,11 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 500;
     font-size: 15px;
-    letter-spacing: -0.03em;
     color: #727e82;
 }
 .product-page .product-details-title{
     font-weight: 500;
     font-size: 16px;
-    letter-spacing: -0.03em;
     line-height: 16px;
     color: #abb3b7;
     margin-top: 20px;
@@ -2876,7 +2854,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 500;
     font-size: 27px;
-    letter-spacing: -0.03em;
     line-height: 27px;
     color: #000;
 }
@@ -2895,7 +2872,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 900;
     font-size: 53px;
-    letter-spacing: -0.03em;
     line-height: 59px;
     text-transform: uppercase;
     color: var(--color-primary);
@@ -2906,7 +2882,6 @@ ul.countries-list li a.active{
 .product-page .product-info li p{
     display: block;
     font-size: 23px;
-    letter-spacing: -0.03em;
     color: #727e82;
     margin-top: 10px;
 }
@@ -2965,7 +2940,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 900;
     font-size: 27px;
-    letter-spacing: -0.03em;
     line-height: 30px;
     color: var(--color-default);
     margin-bottom: 50px;
@@ -2978,7 +2952,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 900;
     font-size: 53px;
-    letter-spacing: -0.03em;
     line-height: 59px;
     margin-bottom: 30px;
 }
@@ -3134,7 +3107,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 900;
     font-size: 27px;
-    letter-spacing: -0.03em;
     line-height: 30px;
     text-transform: uppercase;
     color: var(--color-primary);
@@ -3305,7 +3277,6 @@ ul.countries-list li a.active{
     font-family: 'Goldman', serif;
     font-weight: bold;
     font-size: 85px;
-    letter-spacing: -0.03em;
     line-height: 95px;
     text-transform: uppercase;
     color: var(--color-primary);
@@ -3322,7 +3293,6 @@ ul.countries-list li a.active{
     font-family: 'Goldman', serif;
     font-weight: bold;
     font-size: 29px;
-    letter-spacing: -0.03em;
     line-height: 38px;
     text-transform: uppercase;
     margin-top: 10px;
@@ -3338,7 +3308,6 @@ ul.countries-list li a.active{
     font-family: 'Goldman', serif;
     font-weight: bold;
     font-size: 20px;
-    letter-spacing: -0.03em;
     line-height: 26px;
     text-transform: uppercase;
 }
@@ -3373,7 +3342,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 500;
     font-size: 16px;
-    letter-spacing: -0.03em;
     line-height: 16px;
     color: var(--color-default);
     opacity: 0.69;
@@ -3382,7 +3350,6 @@ ul.countries-list li a.active{
     display: block;
     font-weight: 500;
     font-size: 12px;
-    letter-spacing: -0.03em;
     color: #b8c2c4;
 }
 /* To top */
@@ -3520,12 +3487,10 @@ ul.countries-list li a.active{
 .contact-information .contact-info .contact-link.phone-num{
     font-weight: bold;
     font-size: 47px;
-    letter-spacing: -0.02em;
     color: var(--color-default);
 }
 .contact-information .contact-info .contact-link.phone-num span{
     font-weight: bold;
-    letter-spacing: -0.02em;
     color: var(--color-primary);
 }
 .contact-links{
@@ -3535,7 +3500,6 @@ ul.countries-list li a.active{
 .contact-links a{
     font-weight: 500;
     font-size: 26px;
-    letter-spacing: -0.02em;
     line-height: 52px;
     color: var(--color-default);
 }
@@ -3587,7 +3551,6 @@ footer .certifications-block .certifications-title{
     display: block;
     font-weight: 900;
     font-size: 18px;
-    letter-spacing: -0.03em;
     line-height: 26px;
     margin-bottom: 30px;
 }
@@ -3613,7 +3576,6 @@ footer ul.footer-menu li{
     display: block;
     font-weight: bold;
     font-size: 16px;
-    letter-spacing: -0.03em;
     line-height: 26px;
     text-transform: uppercase;
     margin-bottom: 7px;
@@ -3816,7 +3778,6 @@ footer .made-with i{
     display: block;
     font-weight: 500;
     font-size: 1.25vw  /* 24/19.2 */;
-    letter-spacing: -0.03em;
     line-height: 1.875vw  /* 36/19.2 */;
     margin-bottom: 2.083vw  /* 40/19.2 */;
 }
@@ -3824,7 +3785,6 @@ footer .made-with i{
     display: block;
     font-weight: bold;
     font-size: 1.458vw  /* 28/19.2 */;
-    letter-spacing: -0.03em;
     line-height: 1.875vw  /* 36/19.2 */;
     color: var(--color-primary);
 }
@@ -3839,7 +3799,6 @@ ul.page-list li{
     display: block;
     font-weight: 500;
     font-size: 1.146vw  /* 22/19.2 */;
-    letter-spacing: -0.03em;
     padding-left: 1.198vw  /* 23/19.2 */;
     margin: 12px auto;
 }
@@ -3886,7 +3845,6 @@ ul.page-list li:before{
     font-weight: bold;
     font-size: 2.135vw  /* 41/19.2 */;
     line-height: 3.5vw;
-    letter-spacing: -0.02em;
     color: var(--color-default);
 }
 .page-info .page-info-phone span{
@@ -4082,7 +4040,6 @@ ul.page-list li:before{
     color: #191f21 !important;
     font-weight: 500;
     font-size: 10px;
-    letter-spacing: -0.03em;
     line-height: 10px;
     text-decoration: none !important;
     padding: 5px 10px;
@@ -4276,7 +4233,6 @@ ul.page-list li:before{
     font-weight: 600;
     font-size: 30px;
     line-height: 37px;
-    letter-spacing: -0.04em;
     color: var(--color-default);
 }
 .videos-wrapper .pagination .page-item .page-link {
@@ -4370,7 +4326,6 @@ ul.page-list li:before{
      display: block;
      font-weight: 500;
      font-size: 22px;
-     letter-spacing: -0.03em;
      line-height: 37px;
      text-align: center;
      margin: 60px auto;
@@ -4589,7 +4544,6 @@ ul.page-list li:before{
     font-weight: 900;
     font-size: 2.34375vw  /* 45/19.2 */;
     height: 3.073vw  /* 59/19.2 */;
-    letter-spacing: -0.03em;
     color: var(--color-primary);
     margin-top: 2.604vw  /* 50/19.2 */;
     margin-bottom: 0.417vw  /* 8/19.2 */;
@@ -4610,7 +4564,6 @@ ul.page-list li:before{
     font-weight: 500;
     font-size: 1.302vw  /* 25/19.2 */;
     line-height: 1.771vw  /* 34/19.2 */;
-    letter-spacing: -0.03em;
     color: #000;
     margin-bottom: 0;
 }
@@ -4681,7 +4634,6 @@ ul.page-list li:before{
     display: block;
     font-weight: 500;
     font-size: 1.146vw  /* 22/19.2 */;
-    letter-spacing: -0.03em;
     line-height: 1.5625vw  /* 30/19.2 */;
     text-align: center;
     color: #fff;

@@ -701,6 +701,7 @@ ul.countries-list li a.active{
     font-size: 21px;
     line-height: 23px;
     text-transform: uppercase;
+    text-decoration: none !important;
     color: var(--color-primary);
     transition:  var(--transition);
 }

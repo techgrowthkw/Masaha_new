@@ -154,9 +154,6 @@ $(document).ready(function() {
             992:{
                 items:3,
             },
-            1200:{
-                items:4,
-            },
             1600:{
                 items:5,
             }

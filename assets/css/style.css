@@ -4278,12 +4278,15 @@ ul.page-list li:before{
 }
 .pagination{
     margin-top: 50px;
+    border:  none !important;
 }
 .pagination .page-item .page-link {
     position: relative;
     display: block;
     padding: 0.5rem 0.75rem;
-    background: none;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
     border: none;
     font-weight: 600;
     font-size: 30px;
@@ -4295,8 +4298,9 @@ ul.page-list li:before{
     line-height: 44px;
     color: rgba(25, 31, 33, 0.4);
 }
-.pagination .page-item.active .page-link {
-    color: var(--color-default);
+.pagination .page-item.active .page-link,
+.pagination .page-item .page-link.active{
+    color: var(--color-primary);
 }
 .pagination .page-item.disabled .page-link {
     opacity: 0.4;

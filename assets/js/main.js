@@ -300,3 +300,15 @@ $(document).ready(function(){
         }
     })
 })
+// Next & prev tabs
+$('.btnPrevious').click(function(){
+    const nextTabLinkEl = $('.nav-tabs .active').closest('li').next('li').find('button')[0];
+    const nextTab = new bootstrap.Tab(nextTabLinkEl);
+    nextTab.show();
+});
+
+$('.btnNext').click(function(){
+    const prevTabLinkEl = $('.nav-tabs .active').closest('li').prev('li').find('button')[0];
+    const prevTab = new bootstrap.Tab(prevTabLinkEl);
+    prevTab.show();
+});

@@ -2,8 +2,12 @@ body{
     direction: rtl;
     text-align: right;
 }
-.owl-carousel, .splide{
+.owl-carousel, .splide, .navbar .top-links .site-tel, footer .get-touch .masaha-tel,
+.contact-information .contact-info .contact-link.phone-num, .contact-links a:not(.btn){
     direction: ltr;
+}
+.contact-links a:not(.btn){
+    display: block;
 }
 body{
     font-family: 'Cairo' , 'Montserrat', 'Spartan', 'Spartan MB' , 'Goldman' ,Arial,sans-serif;
@@ -12,7 +16,6 @@ body{
 .btn-outline-primary, .btn-outline-secondary,
 .navbar-nav > .nav-item > .nav-link,
 .navbar .top-links .site-email,
-.navbar .top-links .site-tel,
 .mega-menu .product-item .spare-parts-dept,
 .hero-wrapper .hero-title,
 .service-item .service-title,
@@ -134,7 +137,7 @@ footer .made-with,
 .search-group .input-group .form-control{
     padding-left: .75rem;
     padding-right: 35px;
-    background: url(../images/search.svg) 100% center no-repeat;
+    background: url("../images/search2.svg") 100% center no-repeat;
 }
 .products-slider.owl-carousel .owl-nav button.owl-next,
 .products-slider.owl-carousel .owl-nav button.owl-prev,
@@ -250,12 +253,10 @@ footer .made-with,
     padding-left: 0;
     padding-right: 60px;
 }
-.checkboxes-group .checkbox-container .checkmark {
+.checkboxes-group .checkbox-container .checkbox-all .checkmark,
+.checkboxes-group .checkbox-container .checkbox-single .checkmark {
     left: auto;
     left: 0;
-}
-.checkboxes-group .checkbox-container:hover .category-item{
-    transform: translateX(-40px) scale(1.1);
 }
 .checkboxes-group .checkbox-container .category-item .category-icon{
     margin-right: 0;
@@ -268,8 +269,13 @@ footer .made-with,
 .popular-equipment-header .equipment-search .input-group-text{
     border-radius: 0 23px 23px  0;
 }
+.popular-equipment-header .equipment-search .form-control {
+    border-left: 1px solid #edeeef !important;
+    border-right: none !important;
+    border-radius: 23px 0 0 23px;
+}
 .popular-equipment-item .btn-group-toggle .btn:first-of-type{
-    border-radius: 27px  0 0 27px ;
+    border-radius: 27px 0 0 27px ;
     margin-right: 0;
     margin-left: -5%;
 }
@@ -384,7 +390,8 @@ footer .made-with,
 }
 .need-help-block img{
     right: auto;
-    right: -30px;
+    left: -30px;
+    transform: rotateY(180deg);
 }
 #back-to-top {
     right: auto;
@@ -492,6 +499,20 @@ ul.page-list li:before{
     margin-left: -70px;
     margin-right: 30px;
 }
+.fa-search, .fa-caret-right, .fa-caret-left{
+    transform: rotateY(180deg);
+}
+.pagination .page-item .page-link img{
+    transform: rotateY(180deg);
+}
+.product-page .product-category {
+    left: auto;
+    right: -50px;
+}
+.collapse-category:after {
+    right: auto;
+    left: -16px;
+}
 @media screen and (max-width: 1599px) {
     .btn-chat {
         left: auto;
@@ -550,6 +571,9 @@ ul.page-list li:before{
         right: auto;
         left: 13px;
     }
+    .product-page ul.product-features li {
+        margin: 0 0 30px 40px;
+    }
 }
 @media screen and (max-width: 991px) {
     .rent-buy-tabs .nav-tabs .nav-link:last-of-type {
@@ -598,6 +622,13 @@ ul.page-list li:before{
     .why-masaha img {
         margin-left: -30px;
         margin-right: 10px;
+    }
+    .search-group .input-group {
+        padding-left: 0;
+        padding-right: 15px;
+    }
+    .navbar .top-links .nav-link img{
+        transform: rotateY(180deg);
     }
 }
 @media screen and (max-width: 575px) {

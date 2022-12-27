@@ -264,3 +264,39 @@ function myMap() {
     });
     marker.setMap(map);
 }
+
+// Listen for click on toggle checkbox
+$(document).ready(function(){
+    var hasCheck = function(el) {
+        var _parent = $(el).closest('.checkbox-container'),
+            _result = 0;
+        $(_parent).find('.checkbox-container .checkbox-single input:checkbox').each(function(in2,el2) {
+            if ($(el2).is(':checked')) _result++;
+        })
+        if (_result>0) return false;
+        return true;
+    };
+
+    $('.checkbox-container .checkbox-all input:checkbox').change(function(e){
+        e.preventDefault();
+        var _self = $(this);
+
+        if (_self.is(':checked')) {
+            _self.closest('.checkbox-container').find('.checkbox-single input:checkbox').prop('checked', true);
+        } else {
+            _self.closest('.checkbox-container').find('.checkbox-single input:checkbox').prop('checked', false);
+        }
+    })
+
+    $('.checkbox-single input:checkbox').change(function(e){
+        e.preventDefault();
+        var _self = $(this);
+        if (_self.is(':checked')) {
+            _self.closest('.checkbox-container').find('.checkbox-all input:checkbox').prop('checked', true);
+        } else {
+            if (hasCheck(_self)) {
+                _self.closest('.checkbox-container').find('.checkbox-all input:checkbox').prop('checked', false);
+            }
+        }
+    })
+})

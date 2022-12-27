@@ -2089,21 +2089,34 @@ ul.countries-list li a.active{
     margin-top: 60px;
 }
 .checkboxes-group .checkbox-container {
-    display: block;
     position: relative;
+    display: block;
     padding-left: 60px;
     margin-bottom: 30px;
+}
+.checkboxes-group .checkbox-container .checkbox-all,
+.checkboxes-group .checkbox-container .checkbox-single{
+    display: block;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
+.checkboxes-group .checkbox-container .checkbox-single{
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.05em;
+    color: #132944;
+    padding-left: 30px;
+}
 .checkboxes-group .checkbox-container:last-of-type {
     margin-bottom: 0;
 }
 /* Hide the browser's default checkbox */
-.checkboxes-group .checkbox-container input {
+.checkboxes-group .checkbox-container .checkbox-all input,
+.checkboxes-group .checkbox-container .checkbox-single input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -2111,32 +2124,42 @@ ul.countries-list li a.active{
     width: 0;
 }
 /* Create a custom checkbox */
-.checkboxes-group .checkbox-container .checkmark {
+.checkboxes-group .checkbox-container .checkbox-all .checkmark,
+.checkboxes-group .checkbox-container .checkbox-single .checkmark {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 25px;
     left: 0;
     width: 30px;
     height: 30px;
     border-radius: 9px;
     background: #ecf2f4;
 }
+.checkboxes-group .checkbox-container .checkbox-single .checkmark {
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+}
 /* On mouse-over, add a grey background color */
-.checkboxes-group .checkbox-container:hover input ~ .checkmark {
+.checkboxes-group .checkbox-container .checkbox-all:hover input ~ .checkmark,
+.checkboxes-group .checkbox-container .checkbox-single:hover input ~ .checkmark {
     background-color: #ccc;
 }
 /* Create the checkmark/indicator (hidden when not checked) */
-.checkboxes-group .checkbox-container .checkmark:after {
+.checkboxes-group .checkbox-container .checkbox-all .checkmark:after,
+.checkboxes-group .checkbox-container .checkbox-single .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 /* Show the checkmark when checked */
-.checkboxes-group .checkbox-container input:checked ~ .checkmark:after {
+.checkboxes-group .checkbox-container .checkbox-all input:checked ~ .checkmark:after,
+.checkboxes-group .checkbox-container .checkbox-single input:checked ~ .checkmark:after {
     display: block;
 }
 /* Style the checkmark/indicator */
-.checkboxes-group .checkbox-container .checkmark:after {
+.checkboxes-group .checkbox-container .checkbox-all .checkmark:after,
+.checkboxes-group .checkbox-container .checkbox-single .checkmark:after {
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -2147,33 +2170,38 @@ ul.countries-list li a.active{
     border-radius: 5px;
     background: var(--color-primary);
 }
-.checkboxes-group .checkbox-container .category-item{
+.checkboxes-group .checkbox-container .checkbox-single .checkmark:after {
+    width: 7px;
+    height: 7px;
+    border-radius: 2px;
+}
+.checkboxes-group .category-item{
     display: flex;
     align-items: center;
     transition:  var(--transition);
 }
-.checkboxes-group .checkbox-container:hover .category-item{
-    transform: translateX(40px) scale(1.1);
-}
-.checkboxes-group .checkbox-container .category-item .category-icon{
+.checkboxes-group .category-item .category-icon{
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 100px;
+    height: 80px;
     text-align: center;
     margin-right: 15px;
     transition:  var(--transition);
     overflow: hidden;
 }
-.checkboxes-group .checkbox-container .category-item .category-icon img{
+.checkboxes-group .category-item .category-icon img{
     width: auto;
     max-width: 100%;
     height: auto;
+    max-height: 100%;
+    object-fit: contain;
 }
-.checkboxes-group .checkbox-container .category-item .category-details{
+.checkboxes-group .category-item .category-details{
     display: inline-block;
 }
-.checkboxes-group .checkbox-container .category-item .category-details .category-title{
+.checkboxes-group .category-item .category-details .category-title{
     display: block;
     font-weight: 900;
     font-size: 13px;
@@ -2182,18 +2210,44 @@ ul.countries-list li a.active{
     color: var(--color-default);
     transition:  var(--transition);
 }
-.checkboxes-group .checkbox-container input:checked ~ .category-item .category-details .category-title div{
+.checkboxes-group input:checked ~ .category-item .category-details .category-title div{
     display: block;
     color: var(--color-primary);
     transition:  var(--transition);
 }
-.checkboxes-group .checkbox-container .category-item .category-details .category-info{
+.checkboxes-group .category-item .category-details .category-info{
     display: block;
     font-weight: 500;
     font-size: 8px;
     line-height: 9px;
     color: var(--color-primary);
     margin-top: 6px;
+}
+.sub-category-item{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.collapse-category{
+    position: relative;
+    text-decoration: none !important;
+}
+.collapse-category:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -16px;
+    background: url("../images/Masaha-DropDOwn-Menu-icon.svg") center / contain no-repeat;
+    width: 11px;
+    height: 18px;
+    transform: translateY(-50%);
+    transition: var(--transition);
+}
+.collapse-category[aria-expanded="false"]:after {
+    transform: translateY(-50%) rotate(180deg);
+}
+.collapse-category[aria-expanded="true"]:after {
+    transform: translateY(-50%) rotate(0deg);
+
 }
 /* Popular Equipment */
 .popular-equipment-header{
@@ -4643,6 +4697,48 @@ ul.page-list li:before{
 .why-wrapper + footer{
     margin-top: 0;
 }
+.error-block{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+}
+.error-block > img{
+    display: block;
+    width: 350px;
+    max-width: 80%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+.error-block > h1{
+    display: block;
+    font-family: 'Goldman', serif;
+    font-weight: bold;
+    font-size: 101px;
+    letter-spacing: -0.06em;
+    line-height: 115px;
+    color: var(--color-primary);
+}
+.error-block > h3{
+    display: block;
+    font-family: 'Goldman', serif;
+    font-weight: normal;
+    font-size: 50px;
+    letter-spacing: -0.06em;
+    line-height: 57px;
+    color: var(--color-default);
+}
+.error-block > p{
+    display: block;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: -0.06em;
+    color: var(--color-default);
+    margin-top: 10px;
+}
 /* Responsive*/
 @media screen and (max-width: 1599px) {
     .vertical-tabs .nav-tabs .nav-link {
@@ -5040,6 +5136,16 @@ ul.page-list li:before{
     }
     .product-images-block .product-images-item.height-2 {
         height: 530px;
+    }
+    .product-page ul.product-features li .feature-icon {
+        width: 48px;
+        height: 48px;
+    }
+    .product-page ul.product-features li {
+        margin: 0 40px 30px 0;
+    }
+    .product-page ul.product-features li .feature-info{
+        font-size: 22px;
     }
 }
 @media screen and (max-width: 991px) {
@@ -5447,8 +5553,8 @@ ul.page-list li:before{
         max-width: 400px;
     }
     .featured-block {
-        border-left: none;
-        border-right: none;
+        border-left: none !important;
+        border-right: none !important;
         border-top: 1px solid #BAC2C4 !important;
         margin-top: 20px;
         padding-left: 0 !important;
@@ -5531,6 +5637,35 @@ ul.page-list li:before{
         left: 0 !important;
         right: 0 !important;
         margin-bottom: 30px;
+    }
+    .error-block{
+        margin: 20px auto;
+    }
+    .error-block > img{
+        width: 150px;
+        margin: 0 auto;
+    }
+    .error-block > h1{
+        font-size: 64px;
+        line-height: 80px;
+    }
+    .error-block > h3{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .error-block > p{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .product-page .col-lg-5 {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+    .project-gallery-slider .gallery-img {
+        margin: 0 auto 10px;
+    }
+    .categories-filter{
+        display: none;
     }
 }
 @media screen and (max-width: 767px) {

@@ -5152,6 +5152,9 @@ ul.page-list li:before{
     .product-page ul.product-features li .feature-info{
         font-size: 22px;
     }
+    .collapse-category:after{
+        right: 0;
+    }
 }
 @media screen and (max-width: 991px) {
     .navbar .container-fluid{
@@ -5668,9 +5671,6 @@ ul.page-list li:before{
     }
     .project-gallery-slider .gallery-img {
         margin: 0 auto 10px;
-    }
-    .categories-filter{
-        display: none;
     }
 }
 @media screen and (max-width: 767px) {
@@ -6390,6 +6390,9 @@ ul.page-list li:before{
         padding: 15px;
         height: auto;
         background: transparent;
+    }
+    .categories-filter{
+        display: none;
     }
 }
 @media screen and (max-width: 575px) {

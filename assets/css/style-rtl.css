@@ -578,6 +578,10 @@ ul.page-list li:before{
     .product-page ul.product-features li {
         margin: 0 0 30px 40px;
     }
+    .collapse-category:after{
+        right: auto;
+        left: 0;
+    }
 }
 @media screen and (max-width: 991px) {
     .rent-buy-tabs .nav-tabs .nav-link:last-of-type {

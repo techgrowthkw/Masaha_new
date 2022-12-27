@@ -240,6 +240,7 @@ $(document).ready(function(){
     );
     wow.init()
 });
+/*
 $(document).ready( function() {
 
     // init Isotope
@@ -252,6 +253,7 @@ $(document).ready( function() {
         $grid.isotope({ filter: filterValue });
     });
 })
+*/
 // Map
 function myMap() {
     var mapCanvas = document.getElementById("map");

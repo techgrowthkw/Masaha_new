@@ -2229,6 +2229,7 @@ ul.countries-list li a.active{
 }
 .collapse-category{
     position: relative;
+    display: block;
     text-decoration: none !important;
 }
 .collapse-category:after {

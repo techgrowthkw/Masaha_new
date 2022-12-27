@@ -256,7 +256,7 @@ footer .made-with,
 .checkboxes-group .checkbox-container .checkbox-all .checkmark,
 .checkboxes-group .checkbox-container .checkbox-single .checkmark {
     left: auto;
-    left: 0;
+    right: 0;
 }
 .checkboxes-group .checkbox-container .category-item .category-icon{
     margin-right: 0;
@@ -316,7 +316,7 @@ footer .made-with,
 }
 .product-page .product-category{
     left: auto;
-    left: -50px;
+    right: -50px;
  }
 .product-page .btn-stock:before{
     left: auto;
@@ -386,7 +386,7 @@ footer .made-with,
 }
 .select-products .checkbox-container .product-item .btn-outline-primary:hover:after {
     left: auto;
-    righy: 0;
+    right: 0;
 }
 .need-help-block img{
     right: auto;
@@ -512,6 +512,10 @@ ul.page-list li:before{
 .collapse-category:after {
     right: auto;
     left: -16px;
+}
+.checkboxes-group .checkbox-container .checkbox-single {
+    padding-left: 0;
+    padding-right: 30px;
 }
 @media screen and (max-width: 1599px) {
     .btn-chat {

@@ -1645,7 +1645,7 @@ ul.countries-list li a.active{
 /* Chat */
 .btn-chat{
     position: fixed;
-    bottom: 0;
+    bottom: -60px;
     left: 6.51vw  /* 125/19.2 */;
     background: url("../images/chat-s.svg") center no-repeat;
     background-size: cover;
@@ -1656,7 +1656,11 @@ ul.countries-list li a.active{
     height: 0;
     visibility: hidden;
     padding: 0;
+    transition: var(--transition);
     z-index: 1020;
+}
+.btn-chat:hover{
+    bottom: 0;
 }
 .btn-chat.active{
     height: 182px;
@@ -2854,6 +2858,9 @@ ul.countries-list li a.active{
     font-weight: bold;
     min-width: 167px;
     height: 31px;
+}
+.product-page .btn-stock.disabled{
+    filter: grayscale(0.9);
 }
 .product-page .product-short-details .btn-stock{
     font-size: 9px;
@@ -4743,6 +4750,39 @@ ul.page-list li:before{
     letter-spacing: -0.06em;
     color: var(--color-default);
     margin-top: 10px;
+}
+/* Brands */
+.brands-filter{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+.brands-filter .btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 40px;
+    border-radius: 9px !important;
+    background: #fff;
+    border: 1px solid #eceff0;
+    box-shadow: none !important;
+    margin: 5px;
+}
+.brands-filter .btn.active{
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+}
+.brands-filter .btn img{
+    width: auto;
+    height: auto;
+    max-height: 20px;
+    object-fit: contain;
+}
+.brands-filter .btn.active img{
+    filter: brightness(0) invert(1);
 }
 /* Responsive*/
 @media screen and (max-width: 1599px) {

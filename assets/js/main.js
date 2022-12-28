@@ -240,20 +240,21 @@ $(document).ready(function(){
     );
     wow.init()
 });
-/*
+// Isotope Filter
 $(document).ready( function() {
-
-    // init Isotope
     var $grid = $('.grid').isotope({
         // options
     });
     // filter items on button click
-    $('.checkboxes-group').on( 'click', '.checkbox-container', function() {
+    $('.brands-filter').on( 'click', '.btn', function() {
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({ filter: filterValue });
     });
+    $(".brands-filter .btn").click(function () {
+        $(".brands-filter .btn").removeClass("active");
+        $(this).addClass("active");
+    })
 })
-*/
 // Map
 function myMap() {
     var mapCanvas = document.getElementById("map");

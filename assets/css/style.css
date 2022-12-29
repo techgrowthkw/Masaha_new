@@ -675,8 +675,9 @@ ul.countries-list li a.active{
 }
 .categories-list .category-item .category-icon{
     display: inline-block;
-    min-width: 7.083vw  /* 136/19.2 */;
+    min-width: 7.083vw  /* 136/19.2;; */;
     width: 7.083vw  /* 136/19.2 */;
+    height: 7.083vw  /* 136/19.2 */;
     text-align: center;
     margin-right: 14px;
     transition:  var(--transition);
@@ -690,6 +691,8 @@ ul.countries-list li a.active{
     width: auto;
     max-width: 100%;
     height: auto;
+    max-height: 100%;
+    object-fit: contain;
 }
 .categories-list .category-item .category-details{
     display: inline-block;
@@ -716,8 +719,8 @@ ul.countries-list li a.active{
 .categories-list .category-item .category-details .category-info{
     display: block;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 13px;
+    line-height: 15px;
     color: var(--color-default);
     margin-top: 6px;
 }
@@ -726,17 +729,19 @@ ul.countries-list li a.active{
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 34px;
+    height: 30px;
     border-radius: 17px;
     background: rgba(184, 194, 196, 0.27);
+    box-shadow: none !important;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     color: var(--color-default);
-    padding: 6px 12px;
+    padding: 6px 13px;
     margin: 6px 0 0;
 }
 .categories-list .category-item .category-details .btn.read-more img{
     display: inline-block;
+    width: 12px;
     margin-left: 10px;
 }
 /* Product */
@@ -930,7 +935,7 @@ ul.countries-list li a.active{
     margin: 20px 40px 20px 0;
 }
 .mega-menu .rent-buy-categories .category-item:nth-of-type(4n + 4){
-       margin-right: 0;
+    margin-right: 0;
 }
 .rent-buy-categories .category-item.empty{
     background: none;
@@ -2288,6 +2293,11 @@ ul.countries-list li a.active{
     border-radius: 23px 0 0 23px;
     color: #455157;
 }
+.popular-equipment-header .equipment-search.active .input-group-text{
+    background: rgba(237, 28, 36, 0.1);
+    border: 1px solid rgba(25, 31, 33, 0.1);
+    color: var(--color-default);
+}
 .popular-equipment-header .equipment-search .form-control{
     height: 46px;
     background: #fff;
@@ -2299,6 +2309,11 @@ ul.countries-list li a.active{
     font-size: 13px;
     line-height: 8px;
     color: #6f7e83;
+}
+.popular-equipment-header .equipment-search.active .form-control{
+    background: rgba(237, 28, 36, 0.1);
+    border: 1px solid rgba(25, 31, 33, 0.1);
+    color: var(--color-default);
 }
 
 .popular-equipment-item{
@@ -4390,12 +4405,12 @@ ul.page-list li:before{
     text-align: start;
 }
 .project-gallery-page .project-text{
-     display: block;
-     font-weight: 500;
-     font-size: 22px;
-     line-height: 37px;
-     text-align: center;
-     margin: 60px auto;
+    display: block;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 37px;
+    text-align: center;
+    margin: 60px auto;
 }
 .video-block{
     display: block;
@@ -4787,10 +4802,14 @@ ul.page-list li:before{
 /* Responsive*/
 @media screen and (max-width: 1599px) {
     .vertical-tabs .nav-tabs .nav-link {
-        font-size: 28px;
+        font-size: 26px;
     }
     .hero-wrapper{
         padding-top: 220px;
+    }
+    .btn-outline-primary.view-all {
+        font-size: 11px;
+        line-height: 15px;
     }
     .btn-chat {
         left: 60px;
@@ -4886,16 +4905,16 @@ ul.page-list li:before{
         width: 540px;
     }
     .equipments-wrapper .center .equipment-item .equipment-details .equipment-from-series {
-        font-size: 24px;
-        line-height: 26px;
+        font-size: 22px;
+        line-height: 24px;
     }
     .equipments-wrapper .center .equipment-item .equipment-details .equipment-series {
-        font-size: 38px;
-        line-height: 40px;
+        font-size: 34px;
+        line-height: 38px;
     }
     .equipments-wrapper .center .equipment-item .equipment-details .equipment-code {
-        font-size: 76px;
-        line-height: 80px;
+        font-size: 68px;
+        line-height: 74px;
     }
     .popular-equipment-item .equipment-img {
         height: 200px;
@@ -4906,6 +4925,10 @@ ul.page-list li:before{
     .popular-equipment-item .btn-primary{
         height: 46px;
         font-size: 16px;
+    }
+    .popular-equipment-item .btn-primary.disabled .not-available {
+        font-size: 8px;
+        margin-top: 4px;
     }
     footer .search-group .input-group .input-group-prepend button {
         font-size: 12px;
@@ -4930,8 +4953,8 @@ ul.page-list li:before{
         line-height: 80px;
     }
     .product-page .product-info li h1 {
-         font-size: 44px;
-         line-height: 48px;
+        font-size: 44px;
+        line-height: 48px;
     }
     .product-page .product-info li p {
         font-size: 18px;
@@ -4959,7 +4982,7 @@ ul.page-list li:before{
         margin-right: 5px;
     }
     .thank-wrapper .thank-you {
-       font-size: 64px;
+        font-size: 64px;
         line-height: 70px;
     }
     .thank-wrapper .for-choosing {
@@ -4971,12 +4994,14 @@ ul.page-list li:before{
         margin: 0 15px;
     }
     .categories-list .category-item .category-icon {
-        width: 100px;
+        width: 80px;
+        min-width: 80px;
+        height: 80px;
         margin-right: 10px;
     }
     .categories-list .category-item .category-details .category-title {
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 18px;
     }
     .mega-menu .product-item ul.product-features li {
         display: inline-block;
@@ -5764,7 +5789,7 @@ ul.page-list li:before{
         position: relative;
         display: inline-block;
         width: 100%;
-         padding: 0 10px !important;
+        padding: 0 10px !important;
         transition: var(--transition);
     }
     .categories-filter {
@@ -6075,7 +6100,7 @@ ul.page-list li:before{
     .related-products .related-products-title {
         font-size: 20px;
         line-height: 22px;
-         margin-bottom: 10px;
+        margin-bottom: 10px;
     }
     .request-quotation .request-quotation-title {
         font-size: 30px;

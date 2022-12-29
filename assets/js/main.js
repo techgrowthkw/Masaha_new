@@ -286,8 +286,10 @@ $(document).ready(function(){
 
         if (_self.is(':checked')) {
             _self.closest('.checkbox-container').find('.checkbox-single input:checkbox').prop('checked', true);
+            _self.closest('.checkbox-container').find('.collapse').collapse('show')
         } else {
             _self.closest('.checkbox-container').find('.checkbox-single input:checkbox').prop('checked', false);
+            _self.closest('.checkbox-container').find('.collapse').collapse('hide')
         }
     })
 

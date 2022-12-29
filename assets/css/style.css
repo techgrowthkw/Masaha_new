@@ -4784,11 +4784,16 @@ ul.page-list li:before{
     background: #fff;
     border: 1px solid #eceff0;
     box-shadow: none !important;
+    color: #6f7e83;
+    font-family: 'Goldman' , serif;
+    font-size: 18px;
+    font-weight: bold;
     margin: 5px;
 }
 .brands-filter .btn.active{
     background: var(--color-primary);
     border-color: var(--color-primary);
+    color: #fff !important;
 }
 .brands-filter .btn img{
     width: auto;

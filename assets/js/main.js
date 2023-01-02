@@ -240,16 +240,18 @@ $(document).ready(function(){
     );
     wow.init()
 });
-// Isotope Filter
+// Brands
 $(document).ready( function() {
-    var $grid = $('.grid').isotope({
+    // Isotope Filter
+
+    /*var $grid = $('.grid').isotope({
         // options
     });
     // filter items on button click
     $('.brands-filter').on( 'click', '.btn', function() {
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({ filter: filterValue });
-    });
+    });*/
     $(".brands-filter .btn").click(function () {
         $(".brands-filter .btn").removeClass("active");
         $(this).addClass("active");
@@ -299,8 +301,8 @@ $(document).ready(function(){
         if (_self.is(':checked')) {
             _self.closest('.checkbox-container').find('.checkbox-all input:checkbox').prop('checked', true);
         } else {
-            if (hasCheck(_self)) {
-                _self.closest('.checkbox-container').find('.checkbox-all input:checkbox').prop('checked', false);
+            if ($('.checkbox-single input:checkbox').not(':checked').length ==  $('.checkbox-single input:checkbox').length) {
+                $('.checkbox-single input:checkbox').closest('.checkbox-container').find('.checkbox-all input:checkbox').prop('checked', false);
             }
         }
     })
@@ -317,3 +319,13 @@ $('.btnNext').click(function(){
     const prevTab = new bootstrap.Tab(prevTabLinkEl);
     prevTab.show();
 });
+// Pagination
+$('#demo').pagination({
+    dataSource: [1, 2, 3, 4, 5, 6, 7],
+    pageSize: 5,
+    callback: function(data, pagination) {
+        // template method of yourself
+        var html = template(data);
+        dataContainer.html(html);
+    }
+})

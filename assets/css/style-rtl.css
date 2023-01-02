@@ -126,9 +126,8 @@ footer .made-with,
     padding-left: 0;
     padding-right: 33px;
 }
-.search-wrapper.active .top-bar .right-content{
-    margin-left: 200px;
-    margin-right: 20px;
+.search-wrapper .close-search {
+    margin: 0 130px 0 25px;
 }
 .search-wrapper.active .search-group .input-group .input-group-prepend{
     padding-left: 30px;
@@ -533,10 +532,6 @@ ul.page-list li:before{
     .search-wrapper .btn-outline-secondary {
         right: auto;
         left: 110px;
-    }
-    .search-wrapper.active .top-bar .right-content {
-        margin-right: 0;
-        margin-left: 0;
     }
     .masaha-service {
         padding-left: 140px;

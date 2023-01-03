@@ -319,6 +319,7 @@ $('.btnNext').click(function(){
     const prevTab = new bootstrap.Tab(prevTabLinkEl);
     prevTab.show();
 });
+/*
 //Preloader
 var preloader = $('#preLoader');
 $(window).on('load', function() {
@@ -328,4 +329,4 @@ $(window).on('load', function() {
         preloader.fadeOut(preloaderFadeOutTime);
     }
     hidePreloader();
-});
+});*/

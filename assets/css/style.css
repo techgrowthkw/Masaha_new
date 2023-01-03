@@ -3599,15 +3599,20 @@ footer{
     margin-top: 200px;
     z-index: 1;
 }
-.footer-logo, .your-gate{
+.footer-logo{
     display: block;
     width: 500px;
     max-width: 100%;
     margin-bottom: 30px;
 }
-.footer-logo img, .your-gate img{
+.footer-logo img{
     width: auto;
     max-width: 100%;
+}
+footer .your-gate-wrapper{
+    position: relative;
+    display: block;
+
 }
 footer .search-group .input-group {
     width: 100%;
@@ -4839,7 +4844,7 @@ ul.page-list li:before{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.7);
     width: 100%;
     height: 100%;
     z-index: 9999;
@@ -4847,7 +4852,7 @@ ul.page-list li:before{
 #preLoader img{
     margin: 0 auto;
     text-align: center;
-    width: 200px;
+    width: 100px;
     z-index: 99;
     -webkit-animation: rotate 1.5s forwards alternate-reverse infinite ease-in-out;
     animation: rotate 1.5s forwards alternate-reverse infinite ease-in-out;
@@ -5520,7 +5525,7 @@ ul.page-list li:before{
         width: 400px;
         margin-bottom: 50px;
     }
-    .footer-logo, .your-gate {
+    .footer-logo, .your-gate-wrapper {
         text-align: center;
         margin: 0 auto 40px;
     }

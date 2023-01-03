@@ -319,13 +319,13 @@ $('.btnNext').click(function(){
     const prevTab = new bootstrap.Tab(prevTabLinkEl);
     prevTab.show();
 });
-// Pagination
-$('#demo').pagination({
-    dataSource: [1, 2, 3, 4, 5, 6, 7],
-    pageSize: 5,
-    callback: function(data, pagination) {
-        // template method of yourself
-        var html = template(data);
-        dataContainer.html(html);
+//Preloader
+var preloader = $('#preLoader');
+$(window).on('load', function() {
+    var preloaderFadeOutTime = 3000;
+
+    function hidePreloader() {
+        preloader.fadeOut(preloaderFadeOutTime);
     }
-})
+    hidePreloader();
+});

@@ -301,9 +301,9 @@ $(document).ready(function(){
         if (_self.is(':checked')) {
             _self.closest('.checkbox-container').find('.checkbox-all input:checkbox').prop('checked', true);
         } else {
-            if ($('.checkbox-single input:checkbox').not(':checked').length ==  $('.checkbox-single input:checkbox').length) {
+            /*if ($('.checkbox-single input:checkbox').not(':checked').length ==  $('.checkbox-single input:checkbox').length) {
                 $('.checkbox-single input:checkbox').closest('.checkbox-container').find('.checkbox-all input:checkbox').prop('checked', false);
-            }
+            }*/
         }
     })
 })

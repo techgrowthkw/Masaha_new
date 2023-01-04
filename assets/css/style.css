@@ -3611,9 +3611,74 @@ footer{
 }
 footer .your-gate-wrapper{
     position: relative;
-    display: block;
-
+    display: flex;
+    align-items: center;
 }
+footer .your-gate-wrapper .your-gate{
+    position: relative;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 17px;
+    letter-spacing: -0.06em;
+    line-height: 19px;
+    color: #191f21;
+    text-transform: uppercase;
+    margin-right: 42px;
+}
+footer .your-gate-wrapper .your-gate:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -28px;
+    width: 1px;
+    height: 29px;
+    border-radius: 1px;
+    background: rgba(25, 31, 33, 0.37);
+}
+footer .your-gate-wrapper .your-gate span{
+    font-weight: 300;
+}
+footer .your-gate-wrapper .your-gate div{
+    display: flex;
+    align-items: center;
+}
+footer .your-gate-wrapper .your-gate img{
+    height: 12px;
+    margin-top: -3px;
+}
+footer .your-gate-wrapper .authorized-dealer{
+    display: inline-block;
+}
+footer .your-gate-wrapper .authorized-dealer .authorized-dealer-text{
+    display: block;
+    font-weight: 900;
+    font-size: 9px;
+    letter-spacing: -0.06em;
+    line-height: 11px;
+    color: rgba(25, 31, 33, 0.37);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+footer .your-gate-wrapper .authorized-dealer .authorized-dealer-text span{
+    font-weight: 300;
+}
+footer .your-gate-wrapper .authorized-dealer .authorized-dealer-images{
+    display: flex;
+    align-items: center;
+}
+footer .your-gate-wrapper .authorized-dealer .authorized-dealer-images img{
+    width: auto;
+    max-width: 70px;
+    height: auto;
+    max-height: 18px;
+    object-fit: contain;
+    margin-right: 14px;
+}
+footer .your-gate-wrapper .authorized-dealer .authorized-dealer-images img:last-of-type{
+    margin: 0 !important;
+}
+
 footer .search-group .input-group {
     width: 100%;
     max-width: 100%;
@@ -4793,7 +4858,7 @@ ul.page-list li:before{
     box-shadow: none !important;
     color: #6f7e83;
     font-family: 'Goldman' , serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     margin: 5px;
 }
@@ -5525,8 +5590,13 @@ ul.page-list li:before{
         width: 400px;
         margin-bottom: 50px;
     }
-    .footer-logo, .your-gate-wrapper {
+    .footer-logo {
         text-align: center;
+        margin: 0 auto 40px;
+    }
+    .your-gate-wrapper{
+        align-items: center;
+        justify-content: center;
         margin: 0 auto 40px;
     }
     footer .search-group{

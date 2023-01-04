@@ -62,7 +62,8 @@ footer .made-with,
 .projects-block .project-item .project-info .project-text,
 .why-masaha .why-text,
 .why-masaha .why-question,
-.post-single .post-title{
+.post-single .post-title,
+footer .your-gate-wrapper .your-gate, footer .your-gate-wrapper .authorized-dealer .authorized-dealer-text{
     letter-spacing: 0.07em;
 }
 .partners-wrapper .partners-title{
@@ -515,6 +516,18 @@ ul.page-list li:before{
 .checkboxes-group .checkbox-container .checkbox-single {
     padding-left: 0;
     padding-right: 30px;
+}
+footer .your-gate-wrapper .your-gate{
+    margin-right: 0;
+    margin-left: 42px;
+}
+footer .your-gate-wrapper .your-gate:after{
+    right: auto;
+    left: -28px;
+}
+footer .your-gate-wrapper .authorized-dealer .authorized-dealer-images img{
+    margin-right: 0;
+    margin-left: 14px;
 }
 @media screen and (max-width: 1599px) {
     .btn-chat {

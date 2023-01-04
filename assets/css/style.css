@@ -422,7 +422,7 @@ header.mega-services > img{
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 40px 0;
+    padding: 15px 0;
     width: calc(100vw - 10px);
     height: calc(100vh - 160px);
     background: none;
@@ -4948,11 +4948,18 @@ ul.page-list li:before{
 }
 /* Responsive*/
 @media screen and (max-width: 1599px) {
+    .navbar {
+        padding: 30px 0 20px;
+    }
     .vertical-tabs .nav-tabs .nav-link {
         font-size: 26px;
     }
     .hero-wrapper{
-        padding-top: 220px;
+        padding-top: 180px;
+    }
+    .hero-wrapper .hero-title {
+        font-size: 54px;
+        margin: 0 auto 30px;
     }
     .btn-outline-primary.view-all {
         font-size: 11px;

@@ -307,17 +307,20 @@ $(document).ready(function(){
         }
     })
 })
-// Next & prev tabs
-$('.btnPrevious').on('click',function(){
-    const nextTabLinkEl = $('.nav-tabs .active').closest('li').next('li').find('button')[0];
-    const nextTab = new bootstrap.Tab(nextTabLinkEl);
-    nextTab.show();
-});
 
-$('.btnNext').on('click',function(){
-    const prevTabLinkEl = $('.nav-tabs .active').closest('li').prev('li').find('button')[0];
-    const prevTab = new bootstrap.Tab(prevTabLinkEl);
-    prevTab.show();
+// Next & prev tabs
+$(document).ready(function() {
+    $('.btnPrevious').on('click',function(){
+        const nextTabLinkEl = $('.nav-tabs .active').closest('li').next('li').find('button')[0];
+        const nextTab = new bootstrap.Tab(nextTabLinkEl);
+        nextTab.show();
+    });
+
+    $('.btnNext').on('click',function(){
+        const prevTabLinkEl = $('.nav-tabs .active').closest('li').prev('li').find('button')[0];
+        const prevTab = new bootstrap.Tab(prevTabLinkEl);
+        prevTab.show();
+    });
 });
 /*
 //Preloader

@@ -622,7 +622,9 @@ ul.countries-list li a.active{
 .vertical-tabs .nav-tabs{
     display: flex;
     flex-flow: column;
+    justify-content: space-around;
     border: none;
+    height: calc(100vh - 200px);
 }
 .vertical-tabs .nav-tabs .nav-link {
     position: relative;
@@ -639,7 +641,7 @@ ul.countries-list li a.active{
     text-transform: uppercase;
     padding-right: 0;
     padding-left: 0;
-    margin-bottom: 4.6875vw  /* 90/19.2 */;
+    margin-bottom: 1vw;
     transition:  var(--transition);
 }
 .vertical-tabs .nav-tabs .nav-link.active,
@@ -651,7 +653,7 @@ ul.countries-list li a.active{
     content: '';
     position: absolute;
     top: 0;
-    left: 270px;
+    right: 0;
     margin: 0;
     width: 5px;
     height: 100%;
@@ -5056,20 +5058,41 @@ ul.page-list li:before{
         padding-left: 20px;
         padding-right: 140px;
     }
+    .equipments-wrapper .equipment-item{
+        padding-top: 250px;
+    }
     .equipments-wrapper .center .equipment-item {
-        width: 540px;
+        width: 450px;
+        padding-top: 100px;
     }
     .equipments-wrapper .center .equipment-item .equipment-details .equipment-from-series {
-        font-size: 22px;
-        line-height: 24px;
+        font-size: 20px;
+        line-height: 22px;
     }
     .equipments-wrapper .center .equipment-item .equipment-details .equipment-series {
-        font-size: 34px;
-        line-height: 38px;
+        font-size: 30px;
+        line-height: 34px;
     }
     .equipments-wrapper .center .equipment-item .equipment-details .equipment-code {
-        font-size: 68px;
-        line-height: 74px;
+        font-size: 60px;
+        line-height: 66px;
+    }
+    .equipments-wrapper .equipment-item .equipment-actions .btn{
+        width: 180px;
+        height: 46px;
+    }
+    .equipments-wrapper .equipment-item .equipment-actions .btn-outline-primary.view-all:after{
+        width: 30px;
+    }
+    .equipments-wrapper .equipment-item ul.equipment-features li{
+        margin: 0 10px;
+    }
+    .equipments-wrapper .equipment-item ul.equipment-features li .feature-icon{
+        width: 28px;
+        height: 28px;
+    }
+    .equipments-wrapper .equipment-item ul.equipment-features li .feature-info {
+        font-size: 12px;
     }
     .popular-equipment-item .equipment-img {
         height: 200px;
@@ -5172,15 +5195,24 @@ ul.page-list li:before{
         text-align: start;
     }
     .mega-menu .product-item ul.product-features li .feature-icon {
-        width: 36px;
-        height: 36px;
+        width: 30px;
+        height: 30px;
     }
     .mega-menu .product-item ul.product-features li .feature-info {
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .mega-menu .product-item .product-img{
+        max-height: 300px;
     }
     footer .copy-rights{
         font-size: 16px;
+    }
+    .mega-menu .product-item .product-details .product-logo .product-popular{
+        font-size: 12px;
+    }
+    .equipments-wrapper {
+        margin: 300px 0 100px;
     }
 }
 @media screen and (max-width: 1199px) {
@@ -5220,7 +5252,7 @@ ul.page-list li:before{
     .equipments-wrapper {
         margin: 250px 0 50px;
     }
-    .equipments-wrapper .center .equipment-item {
+    /*.equipments-wrapper .center .equipment-item {
         width: 500px;
         padding-top: 200px;
     }
@@ -5238,7 +5270,7 @@ ul.page-list li:before{
     .equipments-wrapper .center .equipment-item .equipment-details .equipment-code {
         font-size: 70px;
         line-height: 72px;
-    }
+    }*/
     .categories-wrapper {
         padding-top: 100px;
     }
@@ -5406,7 +5438,7 @@ ul.page-list li:before{
     .equipments-wrapper .center .equipment-item {
         width: 250px;
         height: auto;
-        padding-top: 150px;
+        padding-top: 95px;
         margin: 0 auto;
     }
     .equipments-wrapper .center .equipment-item .equipment-img {
@@ -6390,8 +6422,8 @@ ul.page-list li:before{
         max-height: none;
     }
     .mega-menu .product-item ul.product-features li .feature-icon {
-        width: 30px;
-        height: 30px;
+        width: 24px;
+        height: 24px;
     }
     .mega-menu .product-item ul.product-features li .feature-info {
         font-size: 12px;

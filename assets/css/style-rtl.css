@@ -101,8 +101,8 @@ footer .your-gate-wrapper .your-gate, footer .your-gate-wrapper .authorized-deal
 }
 .vertical-tabs .nav-tabs .nav-link.active:before,
 .vertical-tabs .nav-tabs .show>.nav-link:before {
-    left: auto;
-    right: 270px;
+    right: auto;
+    left: 0;
 }
 .categories-list .category-item:hover .category-icon{
     transform: translateX(-10px);

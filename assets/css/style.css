@@ -4905,7 +4905,7 @@ ul.page-list li:before{
     left: 0;
     right: 0;
     bottom: 0;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -4913,6 +4913,9 @@ ul.page-list li:before{
     width: 100%;
     height: 100%;
     z-index: 9999;
+}
+#preLoader.active{
+    display: flex;
 }
 #preLoader img{
     margin: 0 auto;

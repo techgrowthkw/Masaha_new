@@ -529,6 +529,9 @@ footer .your-gate-wrapper .authorized-dealer .authorized-dealer-images img{
     margin-right: 0;
     margin-left: 14px;
 }
+.intl-tel-input{
+    direction: ltr;
+}
 @media screen and (max-width: 1599px) {
     .btn-chat {
         left: auto;

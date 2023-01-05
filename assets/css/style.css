@@ -2472,7 +2472,7 @@ ul.countries-list li a.active{
 .location-wrapper{
     position: relative;
     display: block;
-    margin: 170px 0 200px;
+    margin: 170px 0 0;
     overflow: hidden;
     z-index: 6;
 }
@@ -5300,6 +5300,7 @@ ul.page-list li:before{
     }
     .mega-menu {
         height: calc(100vh - 134px);
+    }
 }
 @media screen and (max-width: 1199px) {
     .container-fluid{
@@ -6076,9 +6077,9 @@ ul.page-list li:before{
         height: calc(100vh - 120px);
     }
     .hero-wrapper {
-        padding-top: 50px;
+        padding-top: 150px;
         padding-bottom: 50px;
-        margin-top: 0;
+        margin-top: -113px;
     }
     .hero-wrapper .hero-title {
         font-size: 30px;

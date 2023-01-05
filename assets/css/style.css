@@ -5275,6 +5275,31 @@ ul.page-list li:before{
         font-size: 20px;
         line-height: 24px;
     }
+    .location-menu-wrapper .location-title{
+        height: 160px;
+    }
+    .location-menu-wrapper .location-title .masaha-img {
+        height: 30px;
+    }
+    .location-menu-wrapper .location-title .location-global{
+        font-size: 46px;
+    }
+    .location-country .country-map {
+        width: 120px;
+        height: 160px;
+    }
+    .location-country .country-name{
+        right: 170px;
+        bottom: 30px;
+    }
+    .location-menu-wrapper ul.language-menu li a{
+        font-size: 20px;
+    }
+    .location-menu-wrapper .close-location{
+        margin-top: 0;
+    }
+    .mega-menu {
+        height: calc(100vh - 134px);
 }
 @media screen and (max-width: 1199px) {
     .container-fluid{

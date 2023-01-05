@@ -594,6 +594,10 @@ footer .your-gate-wrapper .authorized-dealer .authorized-dealer-images img{
         right: auto;
         left: 0;
     }
+    .location-country .country-name{
+        right: auto;
+        left: 170px;
+    }
 }
 @media screen and (max-width: 991px) {
     .rent-buy-tabs .nav-tabs .nav-link:last-of-type {

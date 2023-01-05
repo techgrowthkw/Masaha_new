@@ -6840,6 +6840,19 @@ ul.page-list li:before{
     .mega-menu .product-item .spare-parts-nums a {
         font-size: 16px;
     }
+    .brands-filter {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .brands-filter .btn {
+        height: 30px;
+        font-size: 14px;
+        margin: 3px;
+    }
+    .brands-filter .btn img {
+        max-width: 70px;
+        max-height: 14px;
+    }
 }
 @media screen and (max-width: 575px) {
     .navbar .top-links {

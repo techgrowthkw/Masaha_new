@@ -147,6 +147,16 @@ $(document).ready(function() {
         navText: ["<i class='fa fa-caret-left'></i>","<i class='fa fa-caret-right'></i>"] ,
         margin: 10,
         autoWidth:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                autoWidth: false,
+                items:1,
+            },
+            768:{
+                autoWidth:true,
+            },
+        }
     });
     $('.owl-carousel.equipment-slider').owlCarousel({
         loop: true,

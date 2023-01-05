@@ -1972,8 +1972,8 @@ ul.countries-list li a.active{
     color: #b8c2c4;
 }
 .equipments-wrapper .center .equipment-item .equipment-details .equipment-code{
-    font-size: 88px;
-    line-height: 98px;
+    font-size: 80px;
+    line-height: 88px;
     color: var(--color-default);
 }
 .equipments-wrapper .equipment-item  ul.equipment-features{
@@ -2817,8 +2817,8 @@ ul.countries-list li a.active{
 .product-page .product-title{
     display: block;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 48px;
+    font-size: 36px;
+    line-height: 40px;
     text-transform: uppercase;
 }
 .product-page .product-short-details .product-title{
@@ -2828,8 +2828,8 @@ ul.countries-list li a.active{
 .product-page .product-code{
     display: block;
     font-weight: 900;
-    font-size: 88px;
-    line-height: 98px;
+    font-size: 70px;
+    line-height: 78px;
     text-transform: uppercase;
     color: var(--color-primary);
 }
@@ -2884,7 +2884,7 @@ ul.countries-list li a.active{
 .product-page .product-short-details .btn-stock{
     font-size: 9px;
     min-width: 100px;
-    height: 16px;
+    height: 20px;
 }
 .product-page .btn-stock:before{
     content: '';
@@ -3035,6 +3035,7 @@ ul.countries-list li a.active{
     font-weight: 900;
     font-size: 53px;
     line-height: 59px;
+    text-transform: uppercase;
     margin-bottom: 30px;
 }
 .request-quotation .form-group{
@@ -5070,13 +5071,21 @@ ul.page-list li:before{
         font-size: 20px;
         line-height: 22px;
     }
+    .equipments-wrapper .equipment-item .equipment-details .equipment-series {
+        font-size: 18px;
+        line-height: 22px;
+    }
     .equipments-wrapper .center .equipment-item .equipment-details .equipment-series {
         font-size: 30px;
         line-height: 34px;
     }
+    .equipments-wrapper .equipment-item .equipment-details .equipment-code {
+        font-size: 36px;
+        line-height: 40px;
+    }
     .equipments-wrapper .center .equipment-item .equipment-details .equipment-code {
-        font-size: 60px;
-        line-height: 66px;
+        font-size: 50px;
+        line-height: 56px;
     }
     .equipments-wrapper .equipment-item .equipment-actions .btn{
         width: 180px;
@@ -5132,8 +5141,8 @@ ul.page-list li:before{
         line-height: 80px;
     }
     .product-page .product-info li h1 {
-        font-size: 44px;
-        line-height: 48px;
+        font-size: 40px;
+        line-height: 44px;
     }
     .product-page .product-info li p {
         font-size: 18px;
@@ -5224,6 +5233,38 @@ ul.page-list li:before{
     .location-wrapper .serving-you {
         font-size: 42px;
         line-height: 48px;
+    }
+    .location-wrapper ul.countries-list li {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .location-wrapper ul.countries-list li a {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .rent-buy-categories .explore-categories-title{
+        font-size: 46px;
+    }
+    .rent-buy-categories .explore-categories-title div {
+        font-size: 80px;
+        line-height: 84px;
+    }
+    .request-quotation .request-quotation-title {
+        font-size: 44px;
+        line-height: 50px;
+    }
+    .request-quotation .form-control {
+        min-height: 56px;
+    }
+    .gallery-item {
+        height: 350px;
+    }
+    .post-single .post-title {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .product-page .product-info{
+        margin-top: 350px;
     }
 }
 @media screen and (max-width: 1199px) {
@@ -5418,6 +5459,20 @@ ul.page-list li:before{
     .collapse-category:after{
         right: 0;
     }
+    .product-page .product-title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .product-page .product-code {
+        font-size: 60px;
+        line-height: 66px;
+    }
+    .select-products .checkbox-container,
+    .selected-product{
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+    }
 }
 @media screen and (max-width: 991px) {
     .navbar .container-fluid{
@@ -5464,16 +5519,16 @@ ul.page-list li:before{
         flex-flow: column;
     }
     .equipments-wrapper .center .equipment-item .equipment-details .equipment-from-series {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 20px;
     }
     .equipments-wrapper .center .equipment-item .equipment-details .equipment-series {
-        font-size: 30px;
-        line-height: 32px;
+        font-size: 24px;
+        line-height: 30px;
     }
     .equipments-wrapper .center .equipment-item .equipment-details .equipment-code {
-        font-size: 56px;
-        line-height: 60px;
+        font-size: 44px;
+        line-height: 50px;
         margin-bottom: 20px;
     }
     .popular-equipment-header {
@@ -5946,6 +6001,9 @@ ul.page-list li:before{
     .search-wrapper.active .browse-products{
         width: 100%;
     }
+    .navbar .top-links .site-tel {
+        font-size: 24px;
+    }
 }
 @media screen and (max-width: 767px) {
     .navbar {
@@ -5953,6 +6011,9 @@ ul.page-list li:before{
     }
     .navbar .navbar-brand {
         margin-top: 0;
+    }
+    .navbar .navbar-brand img {
+        height: 70px;
     }
     .navbar .navbar-brand .gate-developments {
         display: none;
@@ -5981,7 +6042,7 @@ ul.page-list li:before{
         height: calc(100vh - 120px);
     }
     .hero-wrapper {
-        padding-top: 200px;
+        padding-top: 50px;
         padding-bottom: 50px;
         margin-top: 0;
     }
@@ -6013,7 +6074,7 @@ ul.page-list li:before{
         display: none;
     }
     .search-group .input-group {
-        height: 54px;
+        height: 50px;
         padding-left: 15px;
     }
     .search-group .input-group .btn-primary {
@@ -6058,18 +6119,39 @@ ul.page-list li:before{
     }
     .equipments-wrapper .center .equipment-item{
         display: block;
-        padding-top: 100px;
+        padding-top: 70px;
     }
     .equipments-wrapper .center .equipment-item .equipment-img {
         padding-top: 0;
         height: 200px;
     }
+
     .equipments-wrapper .equipment-slider-wrapper .btn-outline-secondary {
-        top: 30px;
+        top: 34px;
+        display: inline-flex;
+        height: 36px;
+        width: 180px;
+        font-size: 16px;
+    }
+    .products-slider.owl-carousel .owl-nav button.owl-next, .products-slider.owl-carousel .owl-nav button.owl-prev, .equipment-slider.owl-carousel .owl-nav button.owl-next, .equipment-slider.owl-carousel .owl-nav button.owl-prev {
+        width: 36px;
+        height: 36px;
+        font-size: 24px;
     }
     .equipment-slider.owl-carousel .owl-nav button.owl-next ,
     .equipment-slider.owl-carousel .owl-nav button.owl-prev {
-        top: 26px;
+        top: 30px;
+    }
+    .equipments-wrapper .equipment-item .equipment-details,
+    .equipments-wrapper .equipment-item ul.equipment-features{
+        justify-content: center;
+        align-items: center;
+    }
+    .equipments-wrapper .equipment-item .equipment-details > div:nth-of-type(2){
+        text-align: center;
+    }
+    .owl-theme .owl-nav{
+        margin: 0;
     }
     .equipments-wrapper .equipments-title {
         line-height: 30px;
@@ -6096,7 +6178,8 @@ ul.page-list li:before{
         margin-right: 0;
     }
     .location-wrapper {
-        padding-top: 50px;
+        padding-top: 70px;
+        margin: 50px 0;
     }
     .location-wrapper > img {
         left: 0;
@@ -6106,8 +6189,8 @@ ul.page-list li:before{
         opacity: 0.3;
     }
     .location-wrapper .serving-you {
-        font-size: 30px;
-        line-height: 32px;
+        font-size: 24px;
+        line-height: 26px;
     }
     .location-wrapper .row-cols-4>* {
         -ms-flex: 0 0 50%;
@@ -6115,8 +6198,8 @@ ul.page-list li:before{
         max-width: 50%;
     }
     .location-wrapper ul.countries-list li {
-        font-size: 20px;
-        line-height: 22px;
+        font-size: 16px;
+        line-height: 20px;
     }
     .location-wrapper ul.countries-list li a {
         font-size: 14px;
@@ -6157,6 +6240,7 @@ ul.page-list li:before{
         font-size: 24px;
         line-height: 28px;
         width: 98%;
+        height: auto;
     }
     .rent-buy-categories .explore-categories-title div {
         font-size: 36px;
@@ -6665,10 +6749,50 @@ ul.page-list li:before{
     .categories-filter{
         display: none;
     }
+    .location-wrapper .location-title {
+        font-size: 38px;
+        line-height: 1;
+    }
+    .location-wrapper .location-title img {
+        height: 26px;
+    }
+    .footer-logo{
+        max-width: 80%;
+    }
+    .quick-support{
+        margin-top: 0;
+    }
+    .contact-information .contact-info .contact-link {
+        font-size: 16px;
+    }
+    .contact-information .contact-info .contact-link.phone-num {
+        font-size: 24px;
+    }
+    .contact-information .contact-info {
+        margin: 10px auto 20px;
+    }
+    .contact-information .contact-info .contact-icon {
+        width: 36px;
+        height: 36px;
+    }
+    .contact-links {
+        margin-top: 20px;
+    }
+    .contact-links a {
+        font-size: 16px;
+        line-height: 36px;
+    }
+    .page-info{
+        text-align: start !important;
+    }
+    .page-info.text-right > img {
+        left: 0;
+        right: auto;
+    }
 }
 @media screen and (max-width: 575px) {
     .navbar .top-links {
-        top: -110px;
+        top: -100px;
         padding-top: 50px;
         padding-left: 80px;
     }

@@ -84,7 +84,8 @@ footer .your-gate-wrapper .your-gate, footer .your-gate-wrapper .authorized-deal
     right: auto;
     left: 0;
 }
-.navbar .top-links .site-email{
+.navbar .top-links .site-email,
+.navbar .top-links .site-tel{
     text-align: left;
 }
 .location-menu-wrapper ul.language-menu li{
@@ -648,6 +649,10 @@ footer .your-gate-wrapper .authorized-dealer .authorized-dealer-images img{
     }
     .navbar .top-links .nav-link img{
         transform: rotateY(180deg);
+    }
+    .page-info.text-right > img {
+        left: auto;
+        right: 0;
     }
 }
 @media screen and (max-width: 575px) {

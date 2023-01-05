@@ -565,6 +565,7 @@ ul.countries-list li a{
     font-size: 23px;
     line-height: 30px;
     color: #132944;
+    text-transform: capitalize;
     transition:  var(--transition);
 }
 .location-wrapper ul.countries-list li a{
@@ -5265,6 +5266,14 @@ ul.page-list li:before{
     }
     .product-page .product-info{
         margin-top: 350px;
+    }
+    ul.countries-list li {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    ul.countries-list li a {
+        font-size: 20px;
+        line-height: 24px;
     }
 }
 @media screen and (max-width: 1199px) {

@@ -5806,9 +5806,9 @@ ul.page-list li:before{
         margin: 30px auto 20px;
     }
     .page-text {
-        font-size: 16px;
-        line-height: 22px;
-        margin-bottom: 15px;
+        font-size: 16px !important;
+        line-height: 22px !important;
+        margin-bottom: 15px !important;
     }
     ul.page-list li {
         font-size: 16px;
@@ -5845,9 +5845,9 @@ ul.page-list li:before{
         line-height: 20px;
     }
     .why-wrapper .why-text {
-        font-size: 16px;
-        line-height: 20px;
-        margin-bottom: 20px;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        margin-bottom: 20px !important;
     }
     .popular-equipment-item .btn-primary {
         height: 36px;
@@ -6039,6 +6039,9 @@ ul.page-list li:before{
     }
     .navbar .top-links .site-tel {
         font-size: 24px;
+    }
+    .categories-page {
+        margin: 0 auto;
     }
 }
 @media screen and (max-width: 767px) {

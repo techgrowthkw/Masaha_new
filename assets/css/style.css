@@ -4951,6 +4951,7 @@ ul.page-list li:before{
         transform: rotate(360deg);
     }
 }
+
 /* Responsive*/
 @media screen and (max-width: 1599px) {
     .navbar {
@@ -6851,4 +6852,8 @@ ul.page-list li:before{
     .checkboxes-group .checkbox-container {
         width: 100%;
     }
+}
+
+.note-editor .note-editable {
+    line-height: 1.2;
 }

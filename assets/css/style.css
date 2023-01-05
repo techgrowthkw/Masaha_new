@@ -2476,7 +2476,8 @@ ul.countries-list li a.active{
     z-index: 6;
 }
 .location-wrapper .location-title{
-    display: block;
+    display: flex;
+    align-items: center;
     font-family: 'Goldman', serif;
     font-weight: 500;
     font-size: 51px;
@@ -2485,7 +2486,7 @@ ul.countries-list li a.active{
 }
 .location-wrapper .location-title img{
     display: inline-block;
-    height: 43px;
+    height: 42px;
     /*vertical-align: middle;*/
     /*margin-right: 20px;*/
 }
@@ -5213,6 +5214,16 @@ ul.page-list li:before{
     }
     .equipments-wrapper {
         margin: 300px 0 100px;
+    }
+    .search-group .input-group {
+        height: 60px;
+    }
+    .location-wrapper .location-title img{
+        height: 36px;
+    }
+    .location-wrapper .serving-you {
+        font-size: 42px;
+        line-height: 48px;
     }
 }
 @media screen and (max-width: 1199px) {

@@ -2,6 +2,8 @@
 $(document).ready(function() {
     // Products
     $('.toggleProducts').on('click', function () {
+        $(".toggleServices, .toggle-location").removeClass("active")
+        $(this).toggleClass("active")
         $(".products-menu-wrapper").toggleClass('active');
         $(".services-menu-wrapper, .location-menu-wrapper").removeClass("active");
         $("header").toggleClass("mega-products").removeClass("mega-services").removeClass("mega-locations");
@@ -10,11 +12,15 @@ $(document).ready(function() {
             if (e.key == "Escape") {
                 $("header, .products-menu-wrapper").removeClass("active");
                 $("header").removeClass("mega-products");
+                $(".toggleProducts, .toggleServices, .toggle-location").removeClass("active")
+
             };
         });
     });
     // Services
     $('.toggleServices').on('click', function () {
+        $(".toggleProducts, .toggle-location").removeClass("active")
+        $(this).toggleClass("active")
         $(".services-menu-wrapper").toggleClass('active');
         $(".products-menu-wrapper, .location-menu-wrapper").removeClass("active");
         $("header").toggleClass("mega-services").removeClass("mega-products").removeClass("mega-locations");
@@ -23,11 +29,14 @@ $(document).ready(function() {
             if (e.key == "Escape") {
                 $(".services-menu-wrapper").removeClass("active");
                 $("header").removeClass("mega-services");
+                $(".toggleProducts, .toggleServices, .toggle-location").removeClass("active")
             };
         });
     });
     // Locations
     $(".toggle-location").on('click', function () {
+        $(".toggleServices, .toggleProducts").removeClass("active")
+        $(this).toggleClass("active")
         $(".location-menu-wrapper").toggleClass("active");
         $(".products-menu-wrapper, .services-menu-wrapper").removeClass("active");
         $("header").toggleClass("mega-locations").removeClass("mega-products").removeClass("mega-services");
@@ -35,11 +44,13 @@ $(document).ready(function() {
             if (e.key == "Escape") {
                 $(".location-menu-wrapper").removeClass("active");
                 $("header").removeClass("mega-locations");
+                $(".toggleProducts, .toggleServices, .toggle-location").removeClass("active")
             };
         });
         $(".close-location").on('click', function () {
             $(".location-menu-wrapper").removeClass("active");
             $("header").removeClass("mega-locations");
+            $(".toggleProducts, .toggleServices, .toggle-location").removeClass("active")
         })
     })
 });

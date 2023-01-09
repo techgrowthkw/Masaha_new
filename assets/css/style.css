@@ -2367,11 +2367,14 @@ ul.countries-list li a.active{
 }
 .popular-equipment-item .equipment-details .equipment-logo{
     display: block;
+    width: 64px;
     height: 48px;
 }
 .popular-equipment-item .equipment-details .equipment-logo img{
-    width: 100%;
-    height: 100%;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
     object-fit: contain;
 }
 .popular-equipment-item .equipment-details ul.equipment-features{
@@ -2472,8 +2475,8 @@ ul.countries-list li a.active{
 .location-wrapper{
     position: relative;
     display: block;
-    margin-top: 170px;
-    padding: 170px 0;
+    margin-top: 100px;
+    padding: 200px 0;
     overflow: hidden;
     z-index: 6;
 }
@@ -4912,6 +4915,8 @@ ul.page-list li:before{
     right: 0;
     bottom: 0;
     display: none;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     background: rgba(255, 255, 255, 0.7);
     width: 100%;
@@ -4920,9 +4925,13 @@ ul.page-list li:before{
 }
 #preLoader.active{
     display: block;
+    align-items: center;
+    justify-content: center;
 }
 #preLoader img{
-    margin: 200px auto;
+    position: fixed;
+    top: 50%;
+    /*margin: 200px auto;*/
     text-align: center;
     width: 100px;
     z-index: 99;
@@ -4932,22 +4941,22 @@ ul.page-list li:before{
 @-webkit-keyframes rotate{
     0% {
         opacity: 0;
-        transform: rotate(0deg);
+        transform: translateY(-50%) rotate(0deg);
     }
     100% {
         opacity: 1;
-        transform: rotate(360deg);
+        transform: translateY(-50%) rotate(360deg);
     }
 }
 
 @keyframes rotate {
     0% {
         opacity: 1;
-        transform: rotate(0deg);
+        transform: translateY(-50%) rotate(0deg);
     }
     100% {
         opacity: 1;
-        transform: rotate(360deg);
+        transform: translateY(-50%) rotate(360deg);
     }
 }
 
@@ -6166,11 +6175,21 @@ ul.page-list li:before{
     }
     .equipments-wrapper .equipment-item .equipment-details,
     .equipments-wrapper .equipment-item ul.equipment-features{
-        justify-content: center;
         align-items: center;
+        justify-content: start;
+    }
+    .equipments-wrapper .equipment-item .equipment-details > div:first-of-type {
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: start;
     }
     .equipments-wrapper .equipment-item .equipment-details > div:nth-of-type(2){
-        text-align: center;
+        width: 100%;
+        text-align: start;
+    }
+    .equipments-wrapper .equipment-item .equipment-actions {
+        margin-top: 10px;
     }
     .owl-theme .owl-nav{
         margin: 0;
@@ -6200,7 +6219,7 @@ ul.page-list li:before{
         margin-right: 0;
     }
     .location-wrapper {
-        padding-top: 70px;
+        padding: 100px 0 0;
         margin: 50px 0;
     }
     .location-wrapper > img {

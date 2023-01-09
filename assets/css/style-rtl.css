@@ -658,6 +658,21 @@ footer .your-gate-wrapper .authorized-dealer .authorized-dealer-images img{
         left: auto;
         right: 0;
     }
+    ul.side-menu .dropdown-menu li .submenu{
+        left: auto;
+        right: 0;
+        margin-left:0;
+        margin-right: 0;
+    }
+    ul.side-menu .dropdown-menu li .submenu a{
+        margin-left: 0;
+        margin-right: 20px;
+    }
+    ul.side-menu .dropdown-menu .dropdown-toggle:after{
+        border-right: .3em solid;
+        border-left: 0;
+    }
+
 }
 @media screen and (max-width: 575px) {
     .navbar .top-links {

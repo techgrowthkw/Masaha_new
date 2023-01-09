@@ -3478,6 +3478,9 @@ ul.countries-list li a.active{
 .contact-block:nth-of-type(odd){
     background: #FAFBFB;
 }
+.contact-block.subscribe-newsletter{
+    background: grey;
+}
 .quick-support{
     margin-top: 150px;
 }
@@ -3517,7 +3520,9 @@ ul.countries-list li a.active{
     letter-spacing: 0.15em;
     color: #6f7e83;
 }
-
+.contact-block.subscribe-newsletter .contact-text {
+    color: #191f21;
+}
 .contact-block .socials{
     margin: 130px auto 0;
 }

@@ -3523,6 +3523,9 @@ ul.countries-list li a.active{
 .contact-block.subscribe-newsletter .contact-text {
     color: #191f21;
 }
+.contact-block.subscribe-newsletter .btn-outline-primary{
+    color: #fff !important;
+}
 .contact-block .socials{
     margin: 130px auto 0;
 }

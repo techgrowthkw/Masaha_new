@@ -2360,15 +2360,17 @@ ul.countries-list li a.active{
     overflow: hidden;
 }
 .popular-equipment-item .equipment-details{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 20px auto 15px;
+    display: block;
+    margin: 15px auto;
 }
 .popular-equipment-item .equipment-details .equipment-logo{
-    display: block;
-    width: 64px;
-    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 15px;
 }
 .popular-equipment-item .equipment-details .equipment-logo img{
     width: auto;
@@ -2380,6 +2382,8 @@ ul.countries-list li a.active{
 .popular-equipment-item .equipment-details ul.equipment-features{
     display: flex;
     align-items: flex-start;
+    justify-content: space-around;
+    text-align: center;
 }
 .popular-equipment-item .equipment-details ul.equipment-features li{
     display: inline-block;

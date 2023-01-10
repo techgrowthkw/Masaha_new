@@ -6870,6 +6870,12 @@ ul.page-list li:before{
     .navbar .top-links .site-tel{
         white-space: nowrap;
     }
+    #preLoader img{
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 @media screen and (max-width: 575px) {
     .navbar .top-links {
